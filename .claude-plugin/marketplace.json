@@ -1,0 +1,59 @@
+{
+  "name": "nov-plugins",
+  "owner": {
+    "name": "Thatcher"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by nov.solutions"
+  },
+  "plugins": [
+    {
+      "name": "zapframe",
+      "source": {
+        "source": "github",
+        "repo": "ThatcherT/zapframe"
+      },
+      "description": "SaaS project creation agent. Django + Next.js, auth, billing, email, monitoring. One conversation to a deployed app.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.nov.solutions",
+      "license": "MIT",
+      "keywords": ["saas", "scaffolding", "django", "nextjs", "deployment"],
+      "category": "development"
+    },
+    {
+      "name": "liteframe",
+      "source": {
+        "source": "github",
+        "repo": "ThatcherT/liteframe"
+      },
+      "description": "Static page publisher. HTML + CSS at any subdomain, deployed to Nginx via Cloudflare Tunnel.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.nov.solutions",
+      "license": "MIT",
+      "keywords": ["static", "html", "landing-page", "deployment"],
+      "category": "development"
+    },
+    {
+      "name": "gummymine",
+      "source": {
+        "source": "github",
+        "repo": "ThatcherT/gummymine"
+      },
+      "description": "Reddit audience research. Scrapes subreddits for complaints, requests, and gaps.",
+      "version": "2.0.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.nov.solutions",
+      "license": "MIT",
+      "keywords": ["reddit", "audience-research", "market-research"],
+      "category": "research"
+    }
+  ]
+}
