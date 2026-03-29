@@ -1,0 +1,27 @@
+{
+  "name": "human-approval",
+  "description": "Gate real-world actions behind human confirmation. The agent describes what it wants to do, the human approves or rejects, and the agent proceeds accordingly. Consumers describe the action — Claude routes to the appropriate provider tool based on grants.",
+  "version": "1.0.0",
+  "behavior": {
+    "input": "An action description, optional context, optional timeout, and optional hints dict",
+    "output": "Approval status (approved/rejected/timeout) with any human comments",
+    "deterministic": "Request must be recorded or return explicit failure. Approval may time out."
+  },
+  "hints": {
+    "urgency": {
+      "type": "string",
+      "enum": ["low", "normal", "critical"],
+      "default": "normal",
+      "description": "Urgency level — affects how the human is notified"
+    },
+    "category": {
+      "type": "string",
+      "description": "Category of action (e.g., 'social-post', 'purchase', 'email')"
+    },
+    "reversible": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the action can be undone if approved"
+    }
+  }
+}

@@ -216,6 +216,71 @@
       "optional": [],
       "provides": ["notification"],
       "environment": {}
+    },
+    {
+      "name": "scheduler-cron",
+      "source": {
+        "source": "github",
+        "repo": "ThatcherT/scheduler-cron"
+      },
+      "description": "Cron-based task scheduling for autonomous agents. Implements the scheduling capability contract.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.nov.solutions",
+      "license": "MIT",
+      "keywords": ["scheduling", "cron", "agent", "recurring"],
+      "category": "provider",
+      "requires": [],
+      "optional": [],
+      "provides": ["scheduling"],
+      "environment": {
+        "os": "linux",
+        "binary": "crontab"
+      }
+    },
+    {
+      "name": "approval-channel",
+      "source": {
+        "source": "github",
+        "repo": "ThatcherT/approval-channel"
+      },
+      "description": "Human approval and conversation via taskpilot channel. Implements human-approval and conversation capability contracts.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.nov.solutions",
+      "license": "MIT",
+      "keywords": ["approval", "human-in-the-loop", "conversation", "channel"],
+      "category": "provider",
+      "requires": [],
+      "optional": [],
+      "provides": ["human-approval", "conversation"],
+      "environment": {
+        "plugin": "taskpilot"
+      }
+    },
+    {
+      "name": "memory-file",
+      "source": {
+        "source": "github",
+        "repo": "ThatcherT/memory-file"
+      },
+      "description": "File-based persistent memory for autonomous agents. Implements the memory capability contract.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.nov.solutions",
+      "license": "MIT",
+      "keywords": ["memory", "persistence", "agent", "knowledge"],
+      "category": "provider",
+      "requires": [],
+      "optional": [],
+      "provides": ["memory"],
+      "environment": {}
     }
   ]
 }
