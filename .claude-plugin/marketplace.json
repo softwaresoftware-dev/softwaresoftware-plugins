@@ -141,6 +141,31 @@
       }
     },
     {
+      "name": "notify-windows",
+      "source": {
+        "source": "github",
+        "repo": "ThatcherT/notify-windows"
+      },
+      "description": "Windows desktop notifications via toast API.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.nov.solutions",
+      "license": "MIT",
+      "keywords": ["notification", "windows", "desktop", "toast"],
+      "category": "provider",
+      "requires": [],
+      "optional": [],
+      "provides": ["notification"],
+      "environment": {
+        "os": "windows"
+      },
+      "grants": {
+        "notification": ["send_notification"]
+      }
+    },
+    {
       "name": "termux-remote",
       "source": {
         "source": "github",
