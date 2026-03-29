@@ -152,9 +152,7 @@
       "requires": [],
       "optional": [],
       "provides": ["notification"],
-      "environment": {
-        "mcp": "Gmail"
-      },
+      "environment": {},
       "grants": {
         "notification": ["send_notification"]
       }
