@@ -1,0 +1,7 @@
+{
+  "name": "static-site-build",
+  "description": "Build a static site (HTML + CSS + optional JS) from a user description. Provider generates production-ready files in a local directory, ready for deployment.",
+  "version": "1.0.0",
+  "tools": [],
+  "notes": "This capability is typically built-in — fulfilled by a plugin's skill system rather than an MCP tool. Plugins declare it as a built_in_capability."
+}

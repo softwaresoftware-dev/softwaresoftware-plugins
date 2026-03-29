@@ -1,0 +1,39 @@
+{
+  "name": "static-site-deploy",
+  "description": "Deploy a static site directory to a live HTTPS URL. Provider handles web server config, DNS, SSL, and verification.",
+  "version": "1.0.0",
+  "tools": [
+    {
+      "name": "deploy_static_site",
+      "description": "Deploy a static site directory to a live URL",
+      "parameters": {
+        "source_dir": {
+          "type": "string",
+          "required": true,
+          "description": "Absolute path to directory containing static files (must include index.html)"
+        },
+        "subdomain": {
+          "type": "string",
+          "required": true,
+          "description": "Subdomain to deploy to (e.g., 'mysite' deploys to mysite.<parent_domain>)"
+        },
+        "hints": {
+          "type": "object",
+          "required": false,
+          "description": "Optional sideband dict. Providers read keys they care about, ignore the rest."
+        }
+      }
+    }
+  ],
+  "hints": {
+    "parent_domain": {
+      "type": "string",
+      "description": "Override the default parent domain"
+    },
+    "update_only": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, only update files — skip Nginx/DNS/tunnel config"
+    }
+  }
+}

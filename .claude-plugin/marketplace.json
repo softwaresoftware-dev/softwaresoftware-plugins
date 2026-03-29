@@ -54,7 +54,7 @@
         "repo": "ThatcherT/liteframe"
       },
       "description": "Static page publisher. HTML + CSS at any subdomain, deployed to Nginx via Cloudflare Tunnel.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": {
         "name": "Thatcher"
       },
@@ -63,10 +63,16 @@
       "keywords": ["static", "html", "landing-page", "deployment"],
       "category": "development",
       "requires": [],
-      "optional": [],
-      "provides": [],
+      "optional": ["notification"],
+      "provides": ["static-site-deploy"],
       "built_in_capabilities": ["static-site-build"],
-      "environment": {}
+      "environment": {
+        "os": "linux",
+        "binary": "cloudflared"
+      },
+      "grants": {
+        "static-site-deploy": ["deploy_static_site"]
+      }
     },
     {
       "name": "gummymine",
@@ -114,14 +120,14 @@
         "source": "github",
         "repo": "ThatcherT/notify-linux"
       },
-      "description": "Linux desktop + phone notifications via notify-send and Termux.",
-      "version": "1.0.0",
+      "description": "Linux desktop notifications via notify-send.",
+      "version": "2.0.0",
       "author": {
         "name": "Thatcher"
       },
       "homepage": "https://plugins.nov.solutions",
       "license": "MIT",
-      "keywords": ["notification", "linux", "desktop", "phone", "termux"],
+      "keywords": ["notification", "linux", "desktop", "notify-send"],
       "category": "provider",
       "requires": [],
       "optional": [],
@@ -130,6 +136,52 @@
         "os": "linux",
         "binary": "notify-send"
       },
+      "grants": {
+        "notification": ["send_notification"]
+      }
+    },
+    {
+      "name": "notify-termux-remote",
+      "source": {
+        "source": "github",
+        "repo": "ThatcherT/notify-termux-remote"
+      },
+      "description": "Remote phone notifications via Termux HTTP bridge on Android.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.nov.solutions",
+      "license": "MIT",
+      "keywords": ["notification", "phone", "termux", "android"],
+      "category": "provider",
+      "requires": [],
+      "optional": [],
+      "provides": ["notification"],
+      "environment": {},
+      "grants": {
+        "notification": ["send_notification"]
+      }
+    },
+    {
+      "name": "notify-slack",
+      "source": {
+        "source": "github",
+        "repo": "ThatcherT/notify-slack"
+      },
+      "description": "Slack notifications via incoming webhooks.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.nov.solutions",
+      "license": "MIT",
+      "keywords": ["notification", "slack", "webhook"],
+      "category": "provider",
+      "requires": [],
+      "optional": [],
+      "provides": ["notification"],
+      "environment": {},
       "grants": {
         "notification": ["send_notification"]
       }
