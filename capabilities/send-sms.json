@@ -1,0 +1,34 @@
+{
+  "name": "send-sms",
+  "description": "Send an SMS text message to a phone number. Provider handles carrier transport. Message is plain text — Claude-powered providers can handle formatting if needed.",
+  "version": "1.0.0",
+  "tools": [
+    {
+      "name": "send_sms",
+      "description": "Send an SMS message to a phone number",
+      "parameters": {
+        "to": {
+          "type": "string",
+          "required": true,
+          "description": "Recipient phone number with country code (e.g., +15551234567)"
+        },
+        "message": {
+          "type": "string",
+          "required": true,
+          "description": "SMS message body"
+        },
+        "hints": {
+          "type": "object",
+          "required": false,
+          "description": "Optional sideband dict. Providers read keys they care about, ignore the rest. Known keys documented in hints registry below."
+        }
+      }
+    }
+  ],
+  "hints": {
+    "source": {
+      "type": "string",
+      "description": "Name of the plugin or system that generated the SMS"
+    }
+  }
+}

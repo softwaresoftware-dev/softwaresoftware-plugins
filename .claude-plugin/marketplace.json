@@ -141,26 +141,29 @@
       }
     },
     {
-      "name": "notify-termux-remote",
+      "name": "termux-remote",
       "source": {
         "source": "github",
-        "repo": "ThatcherT/notify-termux-remote"
+        "repo": "ThatcherT/termux-remote"
       },
-      "description": "Remote phone notifications via Termux HTTP bridge on Android.",
+      "description": "Remote phone capabilities via Termux HTTP bridge. Notifications and SMS through a single connection.",
       "version": "1.0.0",
       "author": {
         "name": "Thatcher"
       },
       "homepage": "https://plugins.nov.solutions",
       "license": "MIT",
-      "keywords": ["notification", "phone", "termux", "android"],
+      "keywords": ["termux", "android", "phone", "notification", "sms", "remote"],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["notification"],
-      "environment": {},
+      "provides": ["notification", "send-sms"],
+      "environment": {
+        "mcp": "desktop-channel"
+      },
       "grants": {
-        "notification": ["send_notification"]
+        "notification": ["send_notification"],
+        "send-sms": ["send_sms"]
       }
     },
     {
