@@ -472,6 +472,46 @@
       "optional": [],
       "provides": [],
       "environment": {}
+    },
+    {
+      "name": "log-tailer",
+      "source": {
+        "source": "github",
+        "repo": "ThatcherT/log-tailer"
+      },
+      "description": "Intelligent log monitoring — tail processes and log files in managed terminal sessions, surface errors with analysis.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.nov.solutions",
+      "license": "MIT",
+      "keywords": ["logs", "monitoring", "tail", "errors", "terminal"],
+      "category": "utilities",
+      "requires": ["terminal-ops"],
+      "optional": ["notification"],
+      "provides": [],
+      "environment": {}
+    },
+    {
+      "name": "dev-watcher",
+      "source": {
+        "source": "github",
+        "repo": "ThatcherT/dev-watcher"
+      },
+      "description": "Dev server monitor — run servers in managed terminal sessions, detect crashes, capture errors, auto-restart.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.nov.solutions",
+      "license": "MIT",
+      "keywords": ["dev-server", "monitoring", "restart", "terminal", "crashes"],
+      "category": "development",
+      "requires": ["terminal-ops"],
+      "optional": ["notification"],
+      "provides": [],
+      "environment": {}
     }
   ]
 }
