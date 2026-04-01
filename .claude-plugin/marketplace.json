@@ -447,11 +447,31 @@
       "keywords": ["tmux", "terminal", "session", "provider"],
       "category": "provider",
       "requires": [],
-      "optional": [],
+      "optional": ["terminal-display"],
       "provides": ["terminal-ops"],
       "environment": {
         "binary": "tmux"
       }
+    },
+    {
+      "name": "terminal-display",
+      "source": {
+        "source": "github",
+        "repo": "ThatcherT/terminal-display"
+      },
+      "description": "Show terminal sessions visually — opens managed sessions in a visible terminal window or tab.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.nov.solutions",
+      "license": "MIT",
+      "keywords": ["terminal", "display", "yakuake", "visible", "provider"],
+      "category": "provider",
+      "requires": [],
+      "optional": [],
+      "provides": ["terminal-display"],
+      "environment": {}
     },
     {
       "name": "plugin-tester",
