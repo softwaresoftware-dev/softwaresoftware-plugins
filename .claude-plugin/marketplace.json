@@ -14,7 +14,7 @@
         "repo": "ThatcherT/nov-dependency-resolver"
       },
       "description": "Plugin dependency resolver — detects environment, resolves capabilities, auto-selects providers, generates install plans.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Thatcher"
       },
