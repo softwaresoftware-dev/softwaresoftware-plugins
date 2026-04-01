@@ -306,8 +306,8 @@
         "source": "github",
         "repo": "ThatcherT/taskpilot"
       },
-      "description": "Spawn and manage long-running autonomous Claude Code sessions. Channel-based communication, crash recovery, operating briefs.",
-      "version": "0.1.0",
+      "description": "Spawn and manage long-running autonomous Claude Code sessions. Auto-resolves capability plugins from marketplace. Channel-based communication, crash recovery, operating briefs.",
+      "version": "0.2.0",
       "author": {
         "name": "Thatcher"
       },
