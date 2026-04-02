@@ -264,21 +264,19 @@
         "source": "github",
         "repo": "ThatcherT/approval-channel"
       },
-      "description": "Human approval and conversation via taskpilot channel. Implements human-approval and conversation capability contracts.",
-      "version": "1.0.0",
+      "description": "Human approval state machine. Gates actions behind human confirmation. Requires a channel provider for message delivery.",
+      "version": "2.0.0",
       "author": {
         "name": "Thatcher"
       },
       "homepage": "https://plugins.nov.solutions",
       "license": "MIT",
-      "keywords": ["approval", "human-in-the-loop", "conversation", "channel"],
+      "keywords": ["approval", "human-in-the-loop", "conversation"],
       "category": "provider",
-      "requires": [],
+      "requires": ["channel"],
       "optional": [],
-      "provides": ["human-approval", "conversation"],
-      "environment": {
-        "plugin": "taskpilot"
-      }
+      "provides": ["human-approval"],
+      "environment": {}
     },
     {
       "name": "memory-file",
@@ -317,7 +315,7 @@
       "category": "framework",
       "requires": ["terminal-ops"],
       "optional": ["conversation"],
-      "provides": ["agent-spawning"],
+      "provides": ["agent-spawning", "channel"],
       "environment": {
         "os": "linux",
         "binary": "tmux"

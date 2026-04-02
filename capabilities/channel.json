@@ -1,0 +1,23 @@
+{
+  "name": "channel",
+  "description": "Deliver a message to a human-visible channel and optionally receive replies. The raw transport layer for human communication — approval workflows, conversations, and other human-in-the-loop patterns build on top of this. Consumers provide the message text; the provider handles delivery and reply routing.",
+  "version": "1.0.0",
+  "behavior": {
+    "input": "A message string to deliver to the human",
+    "output": "Confirmation of delivery with channel details",
+    "deterministic": "Delivery must succeed or return explicit failure. Never silently drop messages."
+  },
+  "hints": {
+    "urgency": {
+      "type": "string",
+      "enum": ["low", "normal", "critical"],
+      "default": "normal",
+      "description": "Urgency level — provider maps to appropriate delivery priority"
+    },
+    "expects_reply": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the sender expects a human reply to this message"
+    }
+  }
+}
