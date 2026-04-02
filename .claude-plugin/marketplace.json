@@ -490,6 +490,26 @@
       "optional": [],
       "provides": [],
       "environment": {}
+    },
+    {
+      "name": "prompt-guard",
+      "source": {
+        "source": "github",
+        "repo": "ThatcherT/prompt-guard"
+      },
+      "description": "Detects prompt injection attempts — privilege escalation, fake system prompts, instruction override, social engineering. Delegates logging to a compatible security-logging provider.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.nov.solutions",
+      "license": "MIT",
+      "keywords": ["security", "prompt-injection", "defense", "guardrails"],
+      "category": "utilities",
+      "requires": [],
+      "optional": ["security-logging", "notification"],
+      "provides": [],
+      "environment": {}
     }
   ]
 }
