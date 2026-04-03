@@ -1,6 +1,6 @@
 # CLAUDE.md — claude-plugin-marketplace (marketplace registry)
 
-This is the `nov-plugins` marketplace registry (`ThatcherT/claude-plugins-nov`). Not a plugin itself — it lists all published plugins for discovery.
+This is the `softwaresoftware-plugins` marketplace registry (`ThatcherT/claude-plugins-softwaresoftware`). Not a plugin itself — it lists all published plugins for discovery.
 
 ## Key Files
 
@@ -32,7 +32,7 @@ Run from the **plugin's own directory**, not here.
      "description": "<one-line>",
      "version": "<version>",
      "author": { "name": "Thatcher" },
-     "homepage": "https://plugins.nov.solutions",
+     "homepage": "https://plugins.softwaresoftware.dev",
      "license": "MIT",
      "keywords": [],
      "category": "<development|research|utilities|provider|framework|toolkit>",
@@ -46,12 +46,12 @@ Run from the **plugin's own directory**, not here.
 6. Add rows to `plugins/CLAUDE.md` (Statusboard + Directory Layout)
 7. Add row to parent statusboard at `/home/thatcher/projects/nov/projects/CLAUDE.md`
 
-## plugins.nov.solutions
+## plugins.softwaresoftware.dev
 
-`plugins.nov.solutions` is the web face of this marketplace registry. Its content should reflect `marketplace.json` — plugin cards, versions, descriptions, install commands, and "Learn more" links to each plugin's dedicated site.
+`plugins.softwaresoftware.dev` is the web face of this marketplace registry. Its content should reflect `marketplace.json` — plugin cards, versions, descriptions, install commands, and "Learn more" links to each plugin's dedicated site.
 
-When `marketplace.json` changes (new plugin, version bump, description update), update `../staticsites/plugins.nov.solutions/` to match and deploy with `/liteframe:deploy`.
+When `marketplace.json` changes (new plugin, version bump, description update), update `../staticsites/plugins.softwaresoftware.dev/` to match and deploy with `/liteframe:deploy`.
 
 ## Capability System
 
-Plugins declare dependencies on capabilities via `requires`/`provides` fields in marketplace.json. nov-dependency-resolver handles resolution. To add a new capability: add providers to marketplace.json with `provides` and `environment` conditions.
+Plugins declare dependencies on capabilities via `requires`/`provides` fields in marketplace.json. softwaresoftware handles resolution. To add a new capability: add providers to marketplace.json with `provides` and `environment` conditions.
