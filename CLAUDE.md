@@ -1,4 +1,4 @@
-# CLAUDE.md — claude-plugin-marketplace (marketplace registry)
+# CLAUDE.md — softwaresoftware-marketplace (marketplace registry)
 
 This is the `softwaresoftware-plugins` marketplace registry (`softwaresoftware-dev/softwaresoftware-marketplace`). Not a plugin itself — it lists all published plugins for discovery.
 
