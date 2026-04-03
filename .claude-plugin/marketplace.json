@@ -6,6 +6,12 @@
   "metadata": {
     "description": "Claude Code plugins by softwaresoftware.dev"
   },
+  "external_registries": {
+    "claude-plugins-official": {
+      "repo": "anthropics/claude-plugins-official",
+      "description": "Anthropic's official Claude Code plugin directory"
+    }
+  },
   "plugins": [
     {
       "name": "softwaresoftware",
