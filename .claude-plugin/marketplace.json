@@ -660,9 +660,10 @@
     {
       "name": "playwright",
       "source": {
-        "source": "registry",
-        "registry": "claude-plugins-official"
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
       },
+      "registry": "claude-plugins-official",
       "description": "Browser automation and E2E testing via Microsoft Playwright MCP server.",
       "version": "0.0.0",
       "author": {
@@ -682,9 +683,10 @@
     {
       "name": "stagehand",
       "source": {
-        "source": "registry",
-        "registry": "claude-plugins-official"
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
       },
+      "registry": "claude-plugins-official",
       "description": "AI-native browser automation skill using Stagehand. Natural language web interaction.",
       "version": "0.0.0",
       "author": {
@@ -704,9 +706,10 @@
     {
       "name": "vercel",
       "source": {
-        "source": "registry",
-        "registry": "claude-plugins-official"
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
       },
+      "registry": "claude-plugins-official",
       "description": "Deploy to Vercel — manage deployments, check build status, configure domains.",
       "version": "0.0.0",
       "author": {
@@ -726,9 +729,10 @@
     {
       "name": "netlify-skills",
       "source": {
-        "source": "registry",
-        "registry": "claude-plugins-official"
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
       },
+      "registry": "claude-plugins-official",
       "description": "Deploy to Netlify — functions, edge functions, blobs, and site management.",
       "version": "0.0.0",
       "author": {
@@ -748,9 +752,10 @@
     {
       "name": "deploy-on-aws",
       "source": {
-        "source": "registry",
-        "registry": "claude-plugins-official"
+        "source": "github",
+        "repo": "awslabs/agent-plugins"
       },
+      "registry": "claude-plugins-official",
       "description": "Deploy to AWS with architecture recommendations, cost estimates, and IaC.",
       "version": "0.0.0",
       "author": {
@@ -770,9 +775,10 @@
     {
       "name": "railway",
       "source": {
-        "source": "registry",
-        "registry": "claude-plugins-official"
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
       },
+      "registry": "claude-plugins-official",
       "description": "Deploy to Railway — manage apps, databases, and infrastructure.",
       "version": "0.0.0",
       "author": {
