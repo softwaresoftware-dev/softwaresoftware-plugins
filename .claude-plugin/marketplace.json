@@ -80,7 +80,7 @@
         "repo": "softwaresoftware-dev/liteframe"
       },
       "description": "Static page publisher. HTML + CSS at any subdomain, deployed to Nginx via Cloudflare Tunnel.",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "Thatcher"
       },
