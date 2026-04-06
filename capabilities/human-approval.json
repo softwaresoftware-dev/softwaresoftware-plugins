@@ -8,12 +8,6 @@
     "deterministic": "Request must be recorded or return explicit failure. Approval may time out."
   },
   "hints": {
-    "urgency": {
-      "type": "string",
-      "enum": ["low", "normal", "critical"],
-      "default": "normal",
-      "description": "Urgency level — affects how the human is notified"
-    },
     "category": {
       "type": "string",
       "description": "Category of action (e.g., 'social-post', 'purchase', 'email')"
