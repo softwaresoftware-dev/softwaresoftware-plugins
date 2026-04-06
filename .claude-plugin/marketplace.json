@@ -378,7 +378,7 @@
         "repo": "softwaresoftware-dev/claude-browser-bridge"
       },
       "description": "MCP bridge between Claude Code and your browser via WebSocket extension.",
-      "version": "2.0.5",
+      "version": "3.0.0",
       "author": {
         "name": "Thatcher"
       },
