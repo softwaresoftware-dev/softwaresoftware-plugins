@@ -3,18 +3,8 @@
   "description": "Alert the user through one or more channels. Provider handles channel selection, formatting, titles, and repeat logic. Consumers describe intent — Claude routes to the appropriate provider tool based on grants.",
   "version": "3.0.0",
   "behavior": {
-    "input": "A message string and optional hints dict",
+    "input": "A message string",
     "output": "Confirmation of delivery with channel details and success/failure status",
     "deterministic": "Delivery must succeed or return explicit failure — never silently drop"
-  },
-  "hints": {
-    "url": {
-      "type": "string",
-      "description": "Related URL for context (e.g., product link, dashboard)"
-    },
-    "source": {
-      "type": "string",
-      "description": "Name of the plugin or system that generated the notification"
-    }
   }
 }

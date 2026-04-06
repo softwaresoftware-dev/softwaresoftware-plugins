@@ -6,12 +6,5 @@
     "input": "A message string to deliver to the human",
     "output": "Confirmation of delivery with channel details",
     "deterministic": "Delivery must succeed or return explicit failure. Never silently drop messages."
-  },
-  "hints": {
-    "expects_reply": {
-      "type": "boolean",
-      "default": false,
-      "description": "Whether the sender expects a human reply to this message"
-    }
   }
 }

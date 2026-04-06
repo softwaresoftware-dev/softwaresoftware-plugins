@@ -3,14 +3,8 @@
   "description": "Send an SMS text message to a phone number. Provider handles carrier transport. Consumers specify recipient and message — Claude routes to the appropriate provider tool based on grants.",
   "version": "2.0.0",
   "behavior": {
-    "input": "A recipient phone number (with country code), a message string, and optional hints dict",
+    "input": "A recipient phone number (with country code) and a message string",
     "output": "Confirmation of delivery with channel details and success/failure status",
     "deterministic": "Delivery must succeed or return explicit failure — never silently drop"
-  },
-  "hints": {
-    "source": {
-      "type": "string",
-      "description": "Name of the plugin or system that generated the SMS"
-    }
   }
 }

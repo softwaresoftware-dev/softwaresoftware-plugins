@@ -6,6 +6,5 @@
     "input": "A task name, plugin, skill, interval (cron or human-readable), and enabled flag",
     "output": "Confirmation of schedule creation, or list of scheduled tasks, or removal confirmation",
     "deterministic": "Schedule operations must succeed or return explicit failure"
-  },
-  "hints": {}
+  }
 }

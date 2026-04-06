@@ -6,6 +6,5 @@
     "input": "Actions like navigate, click, type, screenshot with CSS selectors and URLs",
     "output": "Page content, screenshots, element info, or confirmation of interaction",
     "deterministic": "Actions execute against the live browser state — results depend on page content"
-  },
-  "hints": {}
+  }
 }

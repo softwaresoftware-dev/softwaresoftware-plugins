@@ -6,6 +6,5 @@
     "input": "A daemon name, command to run, optional args/cwd/env",
     "output": "IPC address for connecting to the daemon, PID, and lifecycle status",
     "deterministic": "Start is idempotent — returns existing address if daemon is already running"
-  },
-  "hints": {}
+  }
 }

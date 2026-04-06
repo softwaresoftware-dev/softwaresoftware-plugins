@@ -3,25 +3,8 @@
   "description": "Persistent knowledge storage across agent sessions. Not crash-recovery state — accumulated institutional knowledge that survives task restarts. Providers handle storage format and retrieval. Consumers describe what to remember — Claude routes to the appropriate provider tool based on grants.",
   "version": "1.0.0",
   "behavior": {
-    "input": "A key string, content string, and optional hints dict for storage. A key or query string for retrieval.",
+    "input": "A key string and content string for storage. A key or query string for retrieval.",
     "output": "Confirmation of storage, or retrieved content, or search results with matching keys and excerpts",
     "deterministic": "Storage must succeed or return explicit failure. Retrieval returns content or explicit not-found."
-  },
-  "hints": {
-    "source": {
-      "type": "string",
-      "description": "Name of the plugin or workflow that generated this memory"
-    },
-    "confidence": {
-      "type": "string",
-      "enum": ["low", "medium", "high"],
-      "default": "medium",
-      "description": "How confident the agent is in this knowledge"
-    },
-    "shared": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, store in shared memory accessible to other tasks"
-    }
   }
 }

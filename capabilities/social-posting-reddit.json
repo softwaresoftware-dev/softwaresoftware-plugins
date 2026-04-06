@@ -6,11 +6,5 @@
     "input": "Subreddit name, title, body text, post URL after submission, optional flair. Metrics as upvote/comment counts.",
     "output": "Rate limit status, recorded post details, or performance snapshots. Never silently fail.",
     "deterministic": "Data operations must succeed or return explicit failure. Rate limits enforced in plugin."
-  },
-  "hints": {
-    "source": {
-      "type": "string",
-      "description": "Name of the plugin or agent that generated the content"
-    }
   }
 }
