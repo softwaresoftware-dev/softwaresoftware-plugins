@@ -328,19 +328,19 @@
       }
     },
     {
-      "name": "termux-conversation",
+      "name": "termux-channel",
       "source": {
         "source": "github",
-        "repo": "softwaresoftware-dev/termux-conversation"
+        "repo": "softwaresoftware-dev/termux-channel"
       },
-      "description": "Conversation provider via Termux notifications with inline reply. Routes replies back to agent channels.",
-      "version": "1.1.1",
+      "description": "SMS channel provider via Termux. Delivers messages as phone notifications with correlation IDs for reply tracking.",
+      "version": "1.0.0",
       "author": {
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "license": "MIT",
-      "keywords": ["conversation", "termux", "notification", "reply", "phone"],
+      "keywords": ["channel", "termux", "sms", "notification", "reply", "phone"],
       "category": "provider",
       "requires": [],
       "optional": [],
