@@ -841,8 +841,8 @@
         "source": "github",
         "repo": "softwaresoftware-dev/gmail-mcp"
       },
-      "description": "MCP server for Gmail — read, search, label, filter, send, and archive emails. Requires human approval before sending. No delete capability by design.",
-      "version": "1.1.0",
+      "description": "MCP server for Gmail — read, search, label, filter, send, and archive emails. Includes email manager mode with auto-triage and Slack approval. No delete capability by design.",
+      "version": "1.2.0",
       "author": {
         "name": "Thatcher"
       },
