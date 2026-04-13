@@ -348,28 +348,6 @@
       }
     },
     {
-      "name": "slack-channel",
-      "source": {
-        "source": "github",
-        "repo": "softwaresoftware-dev/slack-channel"
-      },
-      "description": "Channel provider via Slack. Posts messages to a Slack channel and polls threads for replies.",
-      "version": "1.0.0",
-      "author": {
-        "name": "Thatcher"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "MIT",
-      "keywords": ["channel", "slack", "notification", "reply", "thread"],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": ["channel"],
-      "environment": {
-        "mcp": "slack"
-      }
-    },
-    {
       "name": "termux-channel",
       "source": {
         "source": "github",
