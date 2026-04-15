@@ -40,7 +40,7 @@
         "repo": "softwaresoftware-dev/zapframe"
       },
       "description": "SaaS project creation and feature development agent. Django + Next.js, auth, billing, email, monitoring. Create new apps or develop features on existing ones with regression playbooks.",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "Thatcher"
       },
@@ -60,7 +60,7 @@
         "repo": "softwaresoftware-dev/ironframe"
       },
       "description": "Enterprise project creation agent. Django + Next.js with SSO, RBAC, audit logging, multi-tenancy, API key management, and GDPR compliance. Everything in zapframe plus enterprise-grade features.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Thatcher"
       },
