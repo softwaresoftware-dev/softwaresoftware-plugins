@@ -28,7 +28,7 @@ Run from the **plugin's own directory**, not here.
    ```json
    {
      "name": "<plugin-name>",
-     "source": { "source": "github", "repo": "ThatcherT/<plugin-name>" },
+     "source": { "source": "github", "repo": "softwaresoftware-dev/<plugin-name>" },
      "description": "<one-line>",
      "version": "<version>",
      "author": { "name": "Thatcher" },
