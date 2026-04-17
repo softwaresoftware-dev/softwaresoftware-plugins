@@ -25,7 +25,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["dependencies", "resolver", "capabilities", "framework"],
       "category": "framework",
       "requires": [],
@@ -45,7 +44,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["saas", "scaffolding", "django", "nextjs", "deployment"],
       "category": "development",
       "requires": ["docker-dev-environment", "deploy"],
@@ -65,7 +63,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://ironframe.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["enterprise", "saas", "scaffolding", "django", "nextjs", "sso", "rbac", "audit", "multi-tenant", "compliance"],
       "category": "development",
       "requires": ["docker-dev-environment", "deploy"],
@@ -85,7 +82,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://softwaresoftware-design-system.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["design-system", "css", "typography", "dark-theme", "components"],
       "category": "provider",
       "requires": [],
@@ -105,7 +101,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["static", "html", "landing-page", "deployment"],
       "category": "development",
       "requires": ["deploy", "design-system"],
@@ -126,7 +121,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://gummymine.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["reddit", "audience-research", "demand-signals", "market-research"],
       "category": "research",
       "requires": ["browser-automation"],
@@ -146,7 +140,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://cardwatch.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["pokemon", "tcg", "stock-monitor", "queue", "retail", "notifications"],
       "category": "utilities",
       "requires": ["notification"],
@@ -166,7 +159,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["notification", "linux", "desktop", "notify-send"],
       "category": "provider",
       "requires": [],
@@ -189,7 +181,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["notification", "windows", "desktop", "toast"],
       "category": "provider",
       "requires": [],
@@ -211,7 +202,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["termux", "android", "phone", "notification", "sms", "remote"],
       "category": "provider",
       "requires": [],
@@ -233,7 +223,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["notification", "slack", "webhook"],
       "category": "provider",
       "requires": [],
@@ -253,7 +242,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["notification", "email", "gmail", "smtp"],
       "category": "provider",
       "requires": [],
@@ -273,7 +261,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["approval", "human-in-the-loop", "conversation"],
       "category": "provider",
       "requires": [],
@@ -293,7 +280,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["memory", "persistence", "agent", "knowledge"],
       "category": "provider",
       "requires": [],
@@ -313,7 +299,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["agent", "autonomous", "background", "task", "tmux", "channel", "scheduling", "cron"],
       "category": "framework",
       "requires": ["terminal-ops"],
@@ -337,7 +322,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["channel", "termux", "sms", "notification", "reply", "phone"],
       "category": "provider",
       "requires": [],
@@ -359,7 +343,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["daemon", "background", "ipc", "lifecycle", "process"],
       "category": "provider",
       "requires": [],
@@ -381,7 +364,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["browser", "websocket", "extension", "automation"],
       "category": "provider",
       "requires": ["daemon"],
@@ -401,7 +383,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["deploy", "nginx", "cloudflare", "tunnel", "reverse-proxy", "self-hosted"],
       "category": "provider",
       "requires": [],
@@ -423,7 +404,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["docker", "compose", "dev-environment", "port-allocation", "containers"],
       "category": "provider",
       "requires": [],
@@ -445,7 +425,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["reddit", "social-posting", "content", "browser-bridge"],
       "category": "provider",
       "requires": ["browser-automation"],
@@ -465,7 +444,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["tmux", "terminal", "session", "provider"],
       "category": "provider",
       "requires": [],
@@ -487,7 +465,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["testing", "e2e", "plugins", "install", "automation"],
       "category": "development",
       "requires": ["agent-spawning"],
@@ -507,7 +484,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["security", "prompt-injection", "defense", "guardrails"],
       "category": "utilities",
       "requires": [],
@@ -527,7 +503,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["development", "testing", "plugins", "iteration", "e2e"],
       "category": "toolkit",
       "requires": ["agent-spawning"],
@@ -547,7 +522,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["data-provider", "vault", "payment", "secure-fill"],
       "category": "provider",
       "requires": [],
@@ -567,7 +541,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["data-provider", "vault", "address", "secure-fill"],
       "category": "provider",
       "requires": [],
@@ -587,7 +560,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["data-provider", "vault", "contacts", "secure-fill"],
       "category": "provider",
       "requires": [],
@@ -607,7 +579,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["data-provider", "vault", "vehicle", "secure-fill"],
       "category": "provider",
       "requires": [],
@@ -627,7 +598,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["data-provider", "vault", "identity", "secure-fill"],
       "category": "provider",
       "requires": [],
@@ -647,7 +617,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["data-provider", "vault", "banking", "secure-fill"],
       "category": "provider",
       "requires": [],
@@ -805,7 +774,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://tokenboard.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["tokens", "usage", "leaderboard", "stats", "cost"],
       "category": "utilities",
       "requires": [],
@@ -825,7 +793,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://gmail-mcp.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["gmail", "email", "mcp", "organize", "labels", "filters", "send"],
       "category": "utilities",
       "requires": [],
@@ -845,7 +812,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://knowledge-base.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["knowledge-base", "obsidian", "wiki", "memory", "notes", "projects"],
       "category": "utilities",
       "requires": [],
@@ -865,7 +831,6 @@
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "license": "Proprietary",
       "keywords": ["qa", "testing", "visual", "browser", "review", "ui"],
       "category": "toolkit",
       "requires": ["browser-automation"],
