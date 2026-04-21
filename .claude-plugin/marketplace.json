@@ -359,7 +359,7 @@
         "url": "https://github.com/softwaresoftware-dev/claude-browser-bridge.git"
       },
       "description": "MCP bridge between Claude Code and your browser via WebSocket extension.",
-      "version": "3.2.1",
+      "version": "3.2.2",
       "author": {
         "name": "Thatcher"
       },
@@ -369,7 +369,9 @@
       "requires": ["daemon"],
       "optional": [],
       "provides": ["browser-automation"],
-      "environment": {}
+      "environment": {
+        "binary": "node"
+      }
     },
     {
       "name": "nginx-cloudflare-deploy",
