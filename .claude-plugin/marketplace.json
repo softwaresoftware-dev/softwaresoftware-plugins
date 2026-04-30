@@ -117,6 +117,25 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/mindframe.git"
       },
+      "description": "Customer-installable bundle for shipping AI-agent infrastructure. Wraps taskpilot, session-bridge, taskboard, dispatcher, librarian, and browser-bridge into one onboardable product. First wedge: AI Sentry triage.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.softwaresoftware.dev",
+      "keywords": ["agentic", "bundle", "framework", "ops", "claude"],
+      "category": "framework",
+      "requires": [],
+      "optional": [],
+      "provides": [],
+      "environment": {}
+    },
+    {
+      "name": "taskboard",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/softwaresoftware-dev/taskboard.git"
+      },
       "description": "LLM-in-the-loop infra dashboard framework. Describe what you watch; Claude inspects your stack, writes source packs against real API responses, and serves a live status page.",
       "version": "0.1.0",
       "author": {
@@ -124,7 +143,7 @@
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": ["dashboard", "infra", "monitoring", "observability", "claude"],
-      "category": "development",
+      "category": "framework",
       "requires": [],
       "optional": [],
       "provides": [],
