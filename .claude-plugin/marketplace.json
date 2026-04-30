@@ -341,7 +341,7 @@
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": ["agent", "autonomous", "background", "task", "tmux", "channel", "scheduling", "cron"],
       "category": "framework",
-      "requires": ["terminal-ops"],
+      "requires": ["terminal-ops", "session-mesh"],
       "optional": [],
       "provides": ["agent-spawning"],
       "built_in_capabilities": ["scheduling"],
@@ -349,6 +349,25 @@
         "os": "linux",
         "binary": "tmux"
       }
+    },
+    {
+      "name": "session-bridge",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/softwaresoftware-dev/session-bridge-plugin.git"
+      },
+      "description": "Channel MCP that lets Claude Code sessions message each other. Provides the session-mesh capability — bidirectional inbound/outbound communication between live sessions, used by taskpilot and dispatcher for agent-to-agent and external-event routing.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.softwaresoftware.dev",
+      "keywords": ["session", "channel", "mesh", "communication", "provider"],
+      "category": "provider",
+      "requires": [],
+      "optional": [],
+      "provides": ["session-mesh"],
+      "environment": {}
     },
     {
       "name": "termux-channel",
