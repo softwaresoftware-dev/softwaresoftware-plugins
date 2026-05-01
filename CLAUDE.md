@@ -33,7 +33,6 @@ Run from the **plugin's own directory**, not here.
      "version": "<version>",
      "author": { "name": "Thatcher" },
      "homepage": "https://plugins.softwaresoftware.dev",
-     "license": "MIT",
      "keywords": [],
      "category": "<development|research|utilities|provider|framework|toolkit>",
      "requires": [],
