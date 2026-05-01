@@ -850,7 +850,7 @@
         "url": "https://github.com/softwaresoftware-dev/gmail-mcp.git"
       },
       "description": "MCP server for Gmail — read, search, label, filter, send, and archive emails. Includes email manager mode with auto-triage and Slack approval. No delete capability by design.",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "author": {
         "name": "Thatcher"
       },
