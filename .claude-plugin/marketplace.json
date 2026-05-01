@@ -295,13 +295,13 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/approval-channel.git"
       },
-      "description": "Human approval state machine. Gates actions behind human confirmation. Channel-agnostic message delivery.",
-      "version": "2.0.0",
+      "description": "Human approval state machine. Gates actions behind human confirmation. Channel-agnostic message delivery, with built-in MFA via phone push notification.",
+      "version": "2.1.0",
       "author": {
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["approval", "human-in-the-loop", "conversation"],
+      "keywords": ["approval", "human-in-the-loop", "conversation", "mfa"],
       "category": "provider",
       "requires": [],
       "optional": ["channel"],
