@@ -870,18 +870,20 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/knowledge-base.git"
       },
-      "description": "Obsidian-powered knowledge base that Claude maintains across sessions. Tracks project status, decisions, infrastructure, and cross-project relationships in a browsable wiki.",
-      "version": "1.0.0",
+      "description": "Obsidian-powered knowledge base that Claude maintains across sessions. Tracks project status, decisions, infrastructure, and cross-project relationships in a browsable wiki. Ships a librarian sub-agent for read-side queries.",
+      "version": "1.1.0",
       "author": {
         "name": "Thatcher"
       },
       "homepage": "https://knowledge-base.softwaresoftware.dev",
       "keywords": ["knowledge-base", "obsidian", "wiki", "memory", "notes", "projects"],
-      "category": "utilities",
+      "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": [],
-      "environment": {}
+      "provides": ["knowledge-base"],
+      "environment": {
+        "binary": ["git"]
+      }
     },
     {
       "name": "browser-qa",
