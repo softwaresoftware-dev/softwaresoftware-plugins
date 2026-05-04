@@ -415,6 +415,27 @@
       }
     },
     {
+      "name": "dispatcher",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/softwaresoftware-dev/dispatcher.git"
+      },
+      "description": "Event-routing provider. Installs dispatcher-ingress as a managed daemon that routes events from external systems (Sentry, GitHub, Slack, etc.) to long-running sessions or spawns ephemeral agents per event.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Thatcher"
+      },
+      "homepage": "https://plugins.softwaresoftware.dev",
+      "keywords": ["dispatcher", "webhook", "router", "events", "ingress"],
+      "category": "provider",
+      "requires": ["daemon", "agent-spawning", "session-mesh"],
+      "optional": ["deploy"],
+      "provides": ["event-routing"],
+      "environment": {
+        "binary": ["python3", "git"]
+      }
+    },
+    {
       "name": "claude-browser-bridge",
       "source": {
         "source": "url",
