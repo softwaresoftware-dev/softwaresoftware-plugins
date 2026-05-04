@@ -146,7 +146,7 @@
       "category": "framework",
       "requires": [],
       "optional": [],
-      "provides": ["infra-status-page"],
+      "provides": ["status-dashboard"],
       "environment": {
         "binary": ["python3"]
       }
