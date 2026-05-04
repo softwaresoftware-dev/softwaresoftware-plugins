@@ -146,8 +146,10 @@
       "category": "framework",
       "requires": [],
       "optional": [],
-      "provides": [],
-      "environment": {}
+      "provides": ["infra-status-page"],
+      "environment": {
+        "binary": ["python3"]
+      }
     },
     {
       "name": "gummymine",
