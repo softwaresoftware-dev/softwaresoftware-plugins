@@ -117,16 +117,23 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/mindframe.git"
       },
-      "description": "Customer-installable bundle for shipping AI-agent infrastructure. Wraps taskpilot, session-bridge, taskboard, dispatcher, librarian, and browser-bridge into one onboardable product. First wedge: AI Sentry triage.",
-      "version": "0.1.0",
+      "description": "Customer-installable bundle for shipping AI-agent infrastructure. Composes agent-spawning, session-mesh, knowledge-base, event-routing, status-dashboard, and browser-automation into one onboardable product. First wedge: AI Sentry triage.",
+      "version": "0.2.0",
       "author": {
         "name": "Thatcher"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": ["agentic", "bundle", "framework", "ops", "claude"],
       "category": "framework",
-      "requires": [],
-      "optional": [],
+      "requires": [
+        "agent-spawning",
+        "session-mesh",
+        "knowledge-base",
+        "event-routing",
+        "status-dashboard",
+        "browser-automation"
+      ],
+      "optional": ["notification"],
       "provides": [],
       "environment": {}
     },
