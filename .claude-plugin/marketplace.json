@@ -480,7 +480,7 @@
         "url": "https://github.com/softwaresoftware-dev/taskpilot.git"
       },
       "description": "Spawn and manage long-running autonomous Claude Code sessions. kind=service agents survive reboots via systemd. Channel-based communication, crash recovery, operating briefs, built-in cron scheduling.",
-      "version": "0.6.2",
+      "version": "0.6.3",
       "author": {
         "name": "NOV LLC"
       },
