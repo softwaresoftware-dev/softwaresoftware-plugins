@@ -31,7 +31,7 @@ Run from the **plugin's own directory**, not here.
      "source": { "source": "github", "repo": "softwaresoftware-dev/<plugin-name>" },
      "description": "<one-line>",
      "version": "<version>",
-     "author": { "name": "Thatcher" },
+     "author": { "name": "NOV LLC" },
      "homepage": "https://plugins.softwaresoftware.dev",
      "keywords": [],
      "category": "<development|research|utilities|provider|framework|toolkit>",

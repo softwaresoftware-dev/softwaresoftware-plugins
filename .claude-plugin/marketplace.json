@@ -1,7 +1,7 @@
 {
   "name": "softwaresoftware-plugins",
   "owner": {
-    "name": "Thatcher"
+    "name": "NOV LLC"
   },
   "metadata": {
     "description": "Claude Code plugins by softwaresoftware.dev"
@@ -19,13 +19,18 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/softwaresoftware.git"
       },
-      "description": "Plugin dependency resolver — detects environment, resolves capabilities, auto-selects providers, generates install plans.",
+      "description": "Plugin dependency resolver \u2014 detects environment, resolves capabilities, auto-selects providers, generates install plans.",
       "version": "1.4.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["dependencies", "resolver", "capabilities", "framework"],
+      "keywords": [
+        "dependencies",
+        "resolver",
+        "capabilities",
+        "framework"
+      ],
       "category": "framework",
       "requires": [],
       "optional": [],
@@ -43,12 +48,21 @@
       "description": "SaaS project creation and feature development agent. Django + Next.js, auth, billing, email, monitoring. Create new apps or develop features on existing ones with regression playbooks.",
       "version": "1.2.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["saas", "scaffolding", "django", "nextjs", "deployment"],
+      "keywords": [
+        "saas",
+        "scaffolding",
+        "django",
+        "nextjs",
+        "deployment"
+      ],
       "category": "development",
-      "requires": ["docker-dev-environment", "deploy"],
+      "requires": [
+        "docker-dev-environment",
+        "deploy"
+      ],
       "optional": [],
       "provides": [],
       "environment": {}
@@ -62,12 +76,26 @@
       "description": "Enterprise project creation agent. Django + Next.js with SSO, RBAC, audit logging, multi-tenancy, API key management, and GDPR compliance. Everything in zapframe plus enterprise-grade features.",
       "version": "1.0.1",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://ironframe.softwaresoftware.dev",
-      "keywords": ["enterprise", "saas", "scaffolding", "django", "nextjs", "sso", "rbac", "audit", "multi-tenant", "compliance"],
+      "keywords": [
+        "enterprise",
+        "saas",
+        "scaffolding",
+        "django",
+        "nextjs",
+        "sso",
+        "rbac",
+        "audit",
+        "multi-tenant",
+        "compliance"
+      ],
       "category": "development",
-      "requires": ["docker-dev-environment", "deploy"],
+      "requires": [
+        "docker-dev-environment",
+        "deploy"
+      ],
       "optional": [],
       "provides": [],
       "environment": {}
@@ -78,17 +106,25 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/softwaresoftware-design-system.git"
       },
-      "description": "Design system for softwaresoftware.dev — warm dark palette, three-font typography, component standards.",
+      "description": "Design system for softwaresoftware.dev \u2014 warm dark palette, three-font typography, component standards.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://softwaresoftware-design-system.softwaresoftware.dev",
-      "keywords": ["design-system", "css", "typography", "dark-theme", "components"],
+      "keywords": [
+        "design-system",
+        "css",
+        "typography",
+        "dark-theme",
+        "components"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["design-system"],
+      "provides": [
+        "design-system"
+      ],
       "environment": {}
     },
     {
@@ -100,15 +136,27 @@
       "description": "Static page publisher. HTML + CSS at any subdomain, deployed to Nginx via Cloudflare Tunnel.",
       "version": "1.4.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["static", "html", "landing-page", "deployment"],
+      "keywords": [
+        "static",
+        "html",
+        "landing-page",
+        "deployment"
+      ],
       "category": "development",
-      "requires": ["deploy", "design-system"],
-      "optional": ["browser-automation"],
+      "requires": [
+        "deploy",
+        "design-system"
+      ],
+      "optional": [
+        "browser-automation"
+      ],
       "provides": [],
-      "built_in_capabilities": ["static-site-build"],
+      "built_in_capabilities": [
+        "static-site-build"
+      ],
       "environment": {}
     },
     {
@@ -120,10 +168,16 @@
       "description": "AI agents that watch your stack and act on it.",
       "version": "0.2.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["incident-response", "triage", "ai-agent", "ops", "claude"],
+      "keywords": [
+        "incident-response",
+        "triage",
+        "ai-agent",
+        "ops",
+        "claude"
+      ],
       "category": "framework",
       "requires": [
         "agent-spawning",
@@ -133,7 +187,9 @@
         "status-dashboard",
         "browser-automation"
       ],
-      "optional": ["notification"],
+      "optional": [
+        "notification"
+      ],
       "provides": [],
       "environment": {}
     },
@@ -146,16 +202,26 @@
       "description": "LLM-in-the-loop infra dashboard framework. Describe what you watch; Claude inspects your stack, writes source packs against real API responses, and serves a live status page.",
       "version": "0.1.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["dashboard", "infra", "monitoring", "observability", "claude"],
+      "keywords": [
+        "dashboard",
+        "infra",
+        "monitoring",
+        "observability",
+        "claude"
+      ],
       "category": "framework",
       "requires": [],
       "optional": [],
-      "provides": ["status-dashboard"],
+      "provides": [
+        "status-dashboard"
+      ],
       "environment": {
-        "binary": ["python3"]
+        "binary": [
+          "python3"
+        ]
       }
     },
     {
@@ -164,15 +230,22 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/gummymine-plugin.git"
       },
-      "description": "Reddit audience research — mine subreddits for demand signals via gummymine.softwaresoftware.dev",
+      "description": "Reddit audience research \u2014 mine subreddits for demand signals via gummymine.softwaresoftware.dev",
       "version": "3.0.1",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://gummymine.softwaresoftware.dev",
-      "keywords": ["reddit", "audience-research", "demand-signals", "market-research"],
+      "keywords": [
+        "reddit",
+        "audience-research",
+        "demand-signals",
+        "market-research"
+      ],
       "category": "research",
-      "requires": ["browser-automation"],
+      "requires": [
+        "browser-automation"
+      ],
       "optional": [],
       "provides": [],
       "environment": {}
@@ -186,13 +259,24 @@
       "description": "Pokemon card stock monitor. Tracks inventory at 7 major retailers, auto-enters virtual queues, sends phone + desktop notifications.",
       "version": "2.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://cardwatch.softwaresoftware.dev",
-      "keywords": ["pokemon", "tcg", "stock-monitor", "queue", "retail", "notifications"],
+      "keywords": [
+        "pokemon",
+        "tcg",
+        "stock-monitor",
+        "queue",
+        "retail",
+        "notifications"
+      ],
       "category": "utilities",
-      "requires": ["notification"],
-      "optional": ["scheduling"],
+      "requires": [
+        "notification"
+      ],
+      "optional": [
+        "scheduling"
+      ],
       "provides": [],
       "environment": {}
     },
@@ -205,14 +289,21 @@
       "description": "Linux desktop notifications via notify-send.",
       "version": "2.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["notification", "linux", "desktop", "notify-send"],
+      "keywords": [
+        "notification",
+        "linux",
+        "desktop",
+        "notify-send"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["notification"],
+      "provides": [
+        "notification"
+      ],
       "environment": {
         "os": "linux",
         "binary": "notify-send"
@@ -227,14 +318,21 @@
       "description": "Windows desktop notifications via toast API.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["notification", "windows", "desktop", "toast"],
+      "keywords": [
+        "notification",
+        "windows",
+        "desktop",
+        "toast"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["notification"],
+      "provides": [
+        "notification"
+      ],
       "environment": {
         "os": "windows"
       }
@@ -248,14 +346,24 @@
       "description": "Remote phone capabilities via Termux HTTP bridge. Notifications and SMS through a single connection.",
       "version": "1.1.1",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["termux", "android", "phone", "notification", "sms", "remote"],
+      "keywords": [
+        "termux",
+        "android",
+        "phone",
+        "notification",
+        "sms",
+        "remote"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["notification", "send-sms"],
+      "provides": [
+        "notification",
+        "send-sms"
+      ],
       "environment": {
         "mcp": "desktop-channel"
       }
@@ -269,14 +377,20 @@
       "description": "Slack notifications via incoming webhooks.",
       "version": "1.1.1",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["notification", "slack", "webhook"],
+      "keywords": [
+        "notification",
+        "slack",
+        "webhook"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["notification"],
+      "provides": [
+        "notification"
+      ],
       "environment": {}
     },
     {
@@ -288,14 +402,21 @@
       "description": "Email notifications via Gmail SMTP. Implements the notification capability contract.",
       "version": "1.1.1",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["notification", "email", "gmail", "smtp"],
+      "keywords": [
+        "notification",
+        "email",
+        "gmail",
+        "smtp"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["notification"],
+      "provides": [
+        "notification"
+      ],
       "environment": {}
     },
     {
@@ -307,14 +428,23 @@
       "description": "Human approval state machine. Gates actions behind human confirmation. Channel-agnostic message delivery, with built-in MFA via phone push notification.",
       "version": "2.1.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["approval", "human-in-the-loop", "conversation", "mfa"],
+      "keywords": [
+        "approval",
+        "human-in-the-loop",
+        "conversation",
+        "mfa"
+      ],
       "category": "provider",
       "requires": [],
-      "optional": ["channel"],
-      "provides": ["human-approval"],
+      "optional": [
+        "channel"
+      ],
+      "provides": [
+        "human-approval"
+      ],
       "environment": {}
     },
     {
@@ -326,14 +456,21 @@
       "description": "File-based persistent memory for autonomous agents. Implements the memory capability contract.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["memory", "persistence", "agent", "knowledge"],
+      "keywords": [
+        "memory",
+        "persistence",
+        "agent",
+        "knowledge"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["memory"],
+      "provides": [
+        "memory"
+      ],
       "environment": {}
     },
     {
@@ -345,15 +482,31 @@
       "description": "Spawn and manage long-running autonomous Claude Code sessions. kind=service agents survive reboots via systemd. Channel-based communication, crash recovery, operating briefs, built-in cron scheduling.",
       "version": "0.6.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["agent", "autonomous", "background", "task", "tmux", "channel", "scheduling", "cron"],
+      "keywords": [
+        "agent",
+        "autonomous",
+        "background",
+        "task",
+        "tmux",
+        "channel",
+        "scheduling",
+        "cron"
+      ],
       "category": "framework",
-      "requires": ["terminal-ops", "session-mesh"],
+      "requires": [
+        "terminal-ops",
+        "session-mesh"
+      ],
       "optional": [],
-      "provides": ["agent-spawning"],
-      "built_in_capabilities": ["scheduling"],
+      "provides": [
+        "agent-spawning"
+      ],
+      "built_in_capabilities": [
+        "scheduling"
+      ],
       "environment": {
         "os": "linux",
         "binary": "tmux"
@@ -365,17 +518,25 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/session-bridge-plugin.git"
       },
-      "description": "Channel MCP that lets Claude Code sessions message each other. Provides the session-mesh capability — bidirectional inbound/outbound communication between live sessions, used by taskpilot and dispatcher for agent-to-agent and external-event routing.",
+      "description": "Channel MCP that lets Claude Code sessions message each other. Provides the session-mesh capability \u2014 bidirectional inbound/outbound communication between live sessions, used by taskpilot and dispatcher for agent-to-agent and external-event routing.",
       "version": "0.1.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["session", "channel", "mesh", "communication", "provider"],
+      "keywords": [
+        "session",
+        "channel",
+        "mesh",
+        "communication",
+        "provider"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["session-mesh"],
+      "provides": [
+        "session-mesh"
+      ],
       "environment": {}
     },
     {
@@ -387,14 +548,23 @@
       "description": "SMS channel provider via Termux. Delivers messages as phone notifications with correlation IDs for reply tracking.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["channel", "termux", "sms", "notification", "reply", "phone"],
+      "keywords": [
+        "channel",
+        "termux",
+        "sms",
+        "notification",
+        "reply",
+        "phone"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["channel"],
+      "provides": [
+        "channel"
+      ],
       "environment": {
         "mcp": "desktop-channel"
       }
@@ -408,16 +578,28 @@
       "description": "Generic daemon lifecycle manager. Start, stop, and monitor persistent background processes with cross-platform IPC.",
       "version": "1.1.2",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["daemon", "background", "ipc", "lifecycle", "process"],
+      "keywords": [
+        "daemon",
+        "background",
+        "ipc",
+        "lifecycle",
+        "process"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["daemon"],
+      "provides": [
+        "daemon"
+      ],
       "environment": {
-        "os": ["linux", "darwin", "windows"],
+        "os": [
+          "linux",
+          "darwin",
+          "windows"
+        ],
         "binary": "uv"
       }
     },
@@ -430,16 +612,33 @@
       "description": "Event-routing provider. Installs dispatcher-ingress as a managed daemon that routes events from external systems (Sentry, GitHub, Slack, etc.) to long-running sessions or spawns ephemeral agents per event.",
       "version": "0.1.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["dispatcher", "webhook", "router", "events", "ingress"],
+      "keywords": [
+        "dispatcher",
+        "webhook",
+        "router",
+        "events",
+        "ingress"
+      ],
       "category": "provider",
-      "requires": ["daemon", "agent-spawning", "session-mesh"],
-      "optional": ["deploy"],
-      "provides": ["event-routing"],
+      "requires": [
+        "daemon",
+        "agent-spawning",
+        "session-mesh"
+      ],
+      "optional": [
+        "deploy"
+      ],
+      "provides": [
+        "event-routing"
+      ],
       "environment": {
-        "binary": ["python3", "git"]
+        "binary": [
+          "python3",
+          "git"
+        ]
       }
     },
     {
@@ -451,14 +650,23 @@
       "description": "MCP bridge between Claude Code and your browser via WebSocket extension.",
       "version": "3.3.1",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["browser", "websocket", "extension", "automation"],
+      "keywords": [
+        "browser",
+        "websocket",
+        "extension",
+        "automation"
+      ],
       "category": "provider",
-      "requires": ["daemon"],
+      "requires": [
+        "daemon"
+      ],
       "optional": [],
-      "provides": ["browser-automation"],
+      "provides": [
+        "browser-automation"
+      ],
       "environment": {
         "binary": "node"
       }
@@ -472,16 +680,28 @@
       "description": "Deploy local services and static sites to public HTTPS URLs via Nginx reverse proxy and Cloudflare Tunnel. Guided setup with persistent config.",
       "version": "1.1.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["deploy", "nginx", "cloudflare", "tunnel", "reverse-proxy", "self-hosted"],
+      "keywords": [
+        "deploy",
+        "nginx",
+        "cloudflare",
+        "tunnel",
+        "reverse-proxy",
+        "self-hosted"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["deploy"],
+      "provides": [
+        "deploy"
+      ],
       "environment": {
-        "binary": ["nginx", "cloudflared"]
+        "binary": [
+          "nginx",
+          "cloudflared"
+        ]
       }
     },
     {
@@ -493,14 +713,22 @@
       "description": "Dynamic Docker dev environments with port allocation. Reads docker-compose.yml, runs containers with random host ports, manages lifecycle.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["docker", "compose", "dev-environment", "port-allocation", "containers"],
+      "keywords": [
+        "docker",
+        "compose",
+        "dev-environment",
+        "port-allocation",
+        "containers"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["docker-dev-environment"],
+      "provides": [
+        "docker-dev-environment"
+      ],
       "environment": {
         "binary": "docker"
       }
@@ -514,14 +742,25 @@
       "description": "Reddit social-posting provider. Posts, replies, deletes, and tracks performance on Reddit via browser automation.",
       "version": "1.1.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["reddit", "social-posting", "content", "browser-bridge"],
+      "keywords": [
+        "reddit",
+        "social-posting",
+        "content",
+        "browser-bridge"
+      ],
       "category": "provider",
-      "requires": ["browser-automation"],
-      "optional": ["human-approval"],
-      "provides": ["social-posting"],
+      "requires": [
+        "browser-automation"
+      ],
+      "optional": [
+        "human-approval"
+      ],
+      "provides": [
+        "social-posting"
+      ],
       "environment": {}
     },
     {
@@ -533,14 +772,21 @@
       "description": "Terminal session management via tmux. Create, monitor, and control detached terminal sessions.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["tmux", "terminal", "session", "provider"],
+      "keywords": [
+        "tmux",
+        "terminal",
+        "session",
+        "provider"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["terminal-ops"],
+      "provides": [
+        "terminal-ops"
+      ],
       "environment": {
         "binary": "tmux"
       }
@@ -551,15 +797,23 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/plugin-tester.git"
       },
-      "description": "[DEPRECATED — use plugin-dev:test-live] Automated end-to-end testing of plugin install workflows.",
+      "description": "[DEPRECATED \u2014 use plugin-dev:test-live] Automated end-to-end testing of plugin install workflows.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["testing", "e2e", "plugins", "install", "automation"],
+      "keywords": [
+        "testing",
+        "e2e",
+        "plugins",
+        "install",
+        "automation"
+      ],
       "category": "development",
-      "requires": ["agent-spawning"],
+      "requires": [
+        "agent-spawning"
+      ],
       "optional": [],
       "provides": [],
       "environment": {}
@@ -570,16 +824,24 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/prompt-guard.git"
       },
-      "description": "Detects prompt injection attempts — privilege escalation, fake system prompts, instruction override, social engineering. Delegates logging to a compatible security-logging provider.",
+      "description": "Detects prompt injection attempts \u2014 privilege escalation, fake system prompts, instruction override, social engineering. Delegates logging to a compatible security-logging provider.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["security", "prompt-injection", "defense", "guardrails"],
+      "keywords": [
+        "security",
+        "prompt-injection",
+        "defense",
+        "guardrails"
+      ],
       "category": "utilities",
       "requires": [],
-      "optional": ["security-logging", "notification"],
+      "optional": [
+        "security-logging",
+        "notification"
+      ],
       "provides": [],
       "environment": {}
     },
@@ -589,15 +851,23 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/plugin-dev.git"
       },
-      "description": "Plugin development toolkit — local dev iteration loop and marketplace install smoke testing.",
+      "description": "Plugin development toolkit \u2014 local dev iteration loop and marketplace install smoke testing.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["development", "testing", "plugins", "iteration", "e2e"],
+      "keywords": [
+        "development",
+        "testing",
+        "plugins",
+        "iteration",
+        "e2e"
+      ],
       "category": "toolkit",
-      "requires": ["agent-spawning"],
+      "requires": [
+        "agent-spawning"
+      ],
       "optional": [],
       "provides": [],
       "environment": {}
@@ -611,14 +881,21 @@
       "description": "Secure payment data provider. Stores credit/debit card info and fills payment forms without exposing raw values to conversation context.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["data-provider", "vault", "payment", "secure-fill"],
+      "keywords": [
+        "data-provider",
+        "vault",
+        "payment",
+        "secure-fill"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["payment-information"],
+      "provides": [
+        "payment-information"
+      ],
       "environment": {}
     },
     {
@@ -630,14 +907,21 @@
       "description": "Secure address data provider. Stores complete address info and fills forms without exposing raw values to conversation context.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["data-provider", "vault", "address", "secure-fill"],
+      "keywords": [
+        "data-provider",
+        "vault",
+        "address",
+        "secure-fill"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["address"],
+      "provides": [
+        "address"
+      ],
       "environment": {}
     },
     {
@@ -649,14 +933,21 @@
       "description": "Secure contacts data provider. Stores contact info and fills forms without exposing raw values to conversation context.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["data-provider", "vault", "contacts", "secure-fill"],
+      "keywords": [
+        "data-provider",
+        "vault",
+        "contacts",
+        "secure-fill"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["contacts"],
+      "provides": [
+        "contacts"
+      ],
       "environment": {}
     },
     {
@@ -668,14 +959,21 @@
       "description": "Secure vehicle data provider. Stores VIN, plate, insurance info and fills forms without exposing raw values to conversation context.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["data-provider", "vault", "vehicle", "secure-fill"],
+      "keywords": [
+        "data-provider",
+        "vault",
+        "vehicle",
+        "secure-fill"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["vehicle-info"],
+      "provides": [
+        "vehicle-info"
+      ],
       "environment": {}
     },
     {
@@ -687,14 +985,21 @@
       "description": "Secure identity document provider. Stores SSN, driver's license, passport info and fills forms without exposing raw values to conversation context.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["data-provider", "vault", "identity", "secure-fill"],
+      "keywords": [
+        "data-provider",
+        "vault",
+        "identity",
+        "secure-fill"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["identity-documents"],
+      "provides": [
+        "identity-documents"
+      ],
       "environment": {}
     },
     {
@@ -706,14 +1011,21 @@
       "description": "Secure banking data provider. Stores routing/account numbers and fills forms without exposing raw values to conversation context.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["data-provider", "vault", "banking", "secure-fill"],
+      "keywords": [
+        "data-provider",
+        "vault",
+        "banking",
+        "secure-fill"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["banking-info"],
+      "provides": [
+        "banking-info"
+      ],
       "environment": {}
     },
     {
@@ -729,11 +1041,18 @@
         "name": "Microsoft"
       },
       "homepage": "https://github.com/anthropics/claude-plugins-official",
-      "keywords": ["browser", "automation", "testing", "playwright"],
+      "keywords": [
+        "browser",
+        "automation",
+        "testing",
+        "playwright"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["browser-automation"],
+      "provides": [
+        "browser-automation"
+      ],
       "environment": {
         "binary": "npx"
       },
@@ -752,11 +1071,18 @@
         "name": "Browserbase"
       },
       "homepage": "https://github.com/anthropics/claude-plugins-official",
-      "keywords": ["browser", "automation", "stagehand", "ai-native"],
+      "keywords": [
+        "browser",
+        "automation",
+        "stagehand",
+        "ai-native"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["browser-automation"],
+      "provides": [
+        "browser-automation"
+      ],
       "environment": {
         "binary": "npx"
       },
@@ -769,17 +1095,24 @@
         "url": "https://github.com/anthropics/claude-plugins-official.git"
       },
       "registry": "claude-plugins-official",
-      "description": "Deploy to Vercel — manage deployments, check build status, configure domains.",
+      "description": "Deploy to Vercel \u2014 manage deployments, check build status, configure domains.",
       "version": "0.0.0",
       "author": {
         "name": "Vercel"
       },
       "homepage": "https://github.com/anthropics/claude-plugins-official",
-      "keywords": ["deploy", "vercel", "hosting", "serverless"],
+      "keywords": [
+        "deploy",
+        "vercel",
+        "hosting",
+        "serverless"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["deploy"],
+      "provides": [
+        "deploy"
+      ],
       "environment": {
         "env": "VERCEL_TOKEN"
       },
@@ -792,17 +1125,24 @@
         "url": "https://github.com/anthropics/claude-plugins-official.git"
       },
       "registry": "claude-plugins-official",
-      "description": "Deploy to Netlify — functions, edge functions, blobs, and site management.",
+      "description": "Deploy to Netlify \u2014 functions, edge functions, blobs, and site management.",
       "version": "0.0.0",
       "author": {
         "name": "Netlify"
       },
       "homepage": "https://github.com/anthropics/claude-plugins-official",
-      "keywords": ["deploy", "netlify", "hosting", "jamstack"],
+      "keywords": [
+        "deploy",
+        "netlify",
+        "hosting",
+        "jamstack"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["deploy"],
+      "provides": [
+        "deploy"
+      ],
       "environment": {
         "env": "NETLIFY_AUTH_TOKEN"
       },
@@ -821,11 +1161,18 @@
         "name": "AWS"
       },
       "homepage": "https://github.com/awslabs/agent-plugins",
-      "keywords": ["deploy", "aws", "cloud", "infrastructure"],
+      "keywords": [
+        "deploy",
+        "aws",
+        "cloud",
+        "infrastructure"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["deploy"],
+      "provides": [
+        "deploy"
+      ],
       "environment": {
         "binary": "aws"
       },
@@ -838,17 +1185,24 @@
         "url": "https://github.com/anthropics/claude-plugins-official.git"
       },
       "registry": "claude-plugins-official",
-      "description": "Deploy to Railway — manage apps, databases, and infrastructure.",
+      "description": "Deploy to Railway \u2014 manage apps, databases, and infrastructure.",
       "version": "0.0.0",
       "author": {
         "name": "Railway"
       },
       "homepage": "https://github.com/anthropics/claude-plugins-official",
-      "keywords": ["deploy", "railway", "hosting", "paas"],
+      "keywords": [
+        "deploy",
+        "railway",
+        "hosting",
+        "paas"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["deploy"],
+      "provides": [
+        "deploy"
+      ],
       "environment": {
         "env": "RAILWAY_TOKEN"
       },
@@ -860,13 +1214,19 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/tokenboard.git"
       },
-      "description": "Token usage leaderboard — calculates Claude Code API cost equivalent and uploads to the public leaderboard at tokenboard.softwaresoftware.dev.",
+      "description": "Token usage leaderboard \u2014 calculates Claude Code API cost equivalent and uploads to the public leaderboard at tokenboard.softwaresoftware.dev.",
       "version": "1.0.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://tokenboard.softwaresoftware.dev",
-      "keywords": ["tokens", "usage", "leaderboard", "stats", "cost"],
+      "keywords": [
+        "tokens",
+        "usage",
+        "leaderboard",
+        "stats",
+        "cost"
+      ],
       "category": "utilities",
       "requires": [],
       "optional": [],
@@ -879,16 +1239,26 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/gmail-mcp.git"
       },
-      "description": "MCP server for Gmail — read, search, label, filter, send, and archive emails. Includes email manager mode with auto-triage and Slack approval. No delete capability by design.",
+      "description": "MCP server for Gmail \u2014 read, search, label, filter, send, and archive emails. Includes email manager mode with auto-triage and Slack approval. No delete capability by design.",
       "version": "1.3.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://gmail-mcp.softwaresoftware.dev",
-      "keywords": ["gmail", "email", "mcp", "organize", "labels", "filters", "send"],
+      "keywords": [
+        "gmail",
+        "email",
+        "mcp",
+        "organize",
+        "labels",
+        "filters",
+        "send"
+      ],
       "category": "utilities",
       "requires": [],
-      "optional": ["human-approval"],
+      "optional": [
+        "human-approval"
+      ],
       "provides": [],
       "environment": {}
     },
@@ -901,16 +1271,27 @@
       "description": "Obsidian-powered knowledge base that Claude maintains across sessions. Tracks project status, decisions, infrastructure, and cross-project relationships in a browsable wiki. Ships a librarian sub-agent for read-side queries.",
       "version": "1.1.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://knowledge-base.softwaresoftware.dev",
-      "keywords": ["knowledge-base", "obsidian", "wiki", "memory", "notes", "projects"],
+      "keywords": [
+        "knowledge-base",
+        "obsidian",
+        "wiki",
+        "memory",
+        "notes",
+        "projects"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["knowledge-base"],
+      "provides": [
+        "knowledge-base"
+      ],
       "environment": {
-        "binary": ["git"]
+        "binary": [
+          "git"
+        ]
       }
     },
     {
@@ -919,15 +1300,24 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/browser-qa.git"
       },
-      "description": "Visual QA for web apps — screenshot, verify consistency, test interactivity, catch regressions",
+      "description": "Visual QA for web apps \u2014 screenshot, verify consistency, test interactivity, catch regressions",
       "version": "0.1.0",
       "author": {
-        "name": "Thatcher"
+        "name": "NOV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["qa", "testing", "visual", "browser", "review", "ui"],
+      "keywords": [
+        "qa",
+        "testing",
+        "visual",
+        "browser",
+        "review",
+        "ui"
+      ],
       "category": "toolkit",
-      "requires": ["browser-automation"],
+      "requires": [
+        "browser-automation"
+      ],
       "optional": [],
       "provides": [],
       "environment": {}
