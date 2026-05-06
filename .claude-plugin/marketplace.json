@@ -479,8 +479,8 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/taskpilot.git"
       },
-      "description": "Spawn and manage long-running autonomous Claude Code sessions. A long-lived supervisor daemon owns spawn, kill, and crash recovery; services auto-respawn through a reconciler tick. Channel-based communication, operating briefs, built-in cron scheduling.",
-      "version": "0.7.1",
+      "description": "Spawn and manage long-running autonomous Claude Code sessions. A long-lived supervisor daemon owns spawn, kill, and crash recovery; services auto-respawn through a reconciler tick. Channel-based communication, operating briefs, built-in cron scheduling, persistent pane logs.",
+      "version": "0.8.0",
       "author": {
         "name": "NOV LLC"
       },
@@ -731,6 +731,58 @@
       ],
       "environment": {
         "binary": "docker"
+      }
+    },
+    {
+      "name": "wallet",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/softwaresoftware-dev/wallet-plugin.git"
+      },
+      "description": "Read-only MCP wrapper around the wallet CLI. Provides password-vault and totp-generator capabilities for plugins that need to authenticate to third-party services.",
+      "version": "0.1.0",
+      "author": { "name": "NOV LLC" },
+      "homepage": "https://plugins.softwaresoftware.dev",
+      "keywords": ["password", "vault", "credentials", "totp", "2fa"],
+      "category": "provider",
+      "requires": [],
+      "optional": [],
+      "provides": ["password-vault", "totp-generator"],
+      "environment": { "binary": "wallet" }
+    },
+    {
+      "name": "alexa-mcp",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/softwaresoftware-dev/alexa-mcp.git"
+      },
+      "description": "Control Amazon Alexa from Claude Code — speak, control smart-home devices, run routines.",
+      "version": "0.1.0",
+      "author": {
+        "name": "NOV LLC"
+      },
+      "homepage": "https://plugins.softwaresoftware.dev",
+      "keywords": [
+        "alexa",
+        "smart-home",
+        "iot",
+        "voice",
+        "tts"
+      ],
+      "category": "provider",
+      "requires": [],
+      "optional": [
+        "browser-automation",
+        "notification",
+        "scheduling",
+        "human-approval"
+      ],
+      "provides": [
+        "voice-tts",
+        "smart-home-control"
+      ],
+      "environment": {
+        "os": ["linux", "darwin"]
       }
     },
     {
