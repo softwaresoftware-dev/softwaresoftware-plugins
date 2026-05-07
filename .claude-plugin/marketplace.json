@@ -757,7 +757,7 @@
         "url": "https://github.com/softwaresoftware-dev/alexa-mcp.git"
       },
       "description": "Control Amazon Alexa from Claude Code — speak, control smart-home devices and groups, run routines.",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": {
         "name": "NOV LLC"
       },
