@@ -10,6 +10,10 @@
     "claude-plugins-official": {
       "repo": "anthropics/claude-plugins-official",
       "description": "Anthropic's official Claude Code plugin directory"
+    },
+    "arctype-plugins": {
+      "repo": "arctype-ventures/arctype-plugins",
+      "description": "Arctype Ventures' Claude Code plugin marketplace"
     }
   },
   "plugins": [
@@ -1373,6 +1377,38 @@
       "optional": [],
       "provides": [],
       "environment": {}
+    },
+    {
+      "name": "hive-mind",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/arctype-ventures/arctype-plugins.git"
+      },
+      "registry": "arctype-plugins",
+      "description": "Obsidian-based shared knowledge vault for teams. qmd-powered BM25 + vector search over meetings, people, glossary, and per-repo notes. Satisfies the knowledge-base capability when explicitly installed.",
+      "version": "0.1.6",
+      "author": {
+        "name": "Arctype Ventures"
+      },
+      "homepage": "https://github.com/arctype-ventures/arctype-plugins/tree/main/plugins/hive-mind",
+      "keywords": [
+        "knowledge-base",
+        "obsidian",
+        "vault",
+        "qmd",
+        "wiki",
+        "team"
+      ],
+      "category": "provider",
+      "requires": [],
+      "optional": [],
+      "provides": [
+        "knowledge-base"
+      ],
+      "environment": {
+        "binary": "qmd"
+      },
+      "external": true
     }
   ]
 }
