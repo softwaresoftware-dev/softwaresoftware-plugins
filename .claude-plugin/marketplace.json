@@ -632,9 +632,7 @@
         "agent-spawning",
         "session-mesh"
       ],
-      "optional": [
-        "deploy"
-      ],
+      "optional": [],
       "provides": [
         "event-routing"
       ],
