@@ -1,0 +1,15 @@
+# Local Claude Code session state — machine-specific, never shared
+.claude/settings.json
+.claude/settings.local.json
+
+# Python artifacts
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+.env
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
