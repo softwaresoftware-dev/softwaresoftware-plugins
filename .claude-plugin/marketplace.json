@@ -189,9 +189,7 @@
         "knowledge-base",
         "event-routing",
         "status-dashboard",
-        "browser-automation"
-      ],
-      "optional": [
+        "browser-automation",
         "notification"
       ],
       "provides": [],
