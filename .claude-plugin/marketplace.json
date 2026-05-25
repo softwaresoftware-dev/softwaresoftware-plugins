@@ -170,7 +170,7 @@
         "url": "https://github.com/softwaresoftware-dev/mindframe.git"
       },
       "description": "AI agents that learn your org and act on it.",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "author": {
         "name": "NOV LLC"
       },
@@ -510,7 +510,10 @@
         "scheduling"
       ],
       "environment": {
-        "os": ["linux", "darwin"],
+        "os": [
+          "linux",
+          "darwin"
+        ],
         "binary": "tmux"
       }
     },
@@ -741,14 +744,27 @@
       },
       "description": "Read-only MCP wrapper around the wallet CLI. Provides password-vault and totp-generator capabilities for plugins that need to authenticate to third-party services.",
       "version": "0.1.0",
-      "author": { "name": "NOV LLC" },
+      "author": {
+        "name": "NOV LLC"
+      },
       "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": ["password", "vault", "credentials", "totp", "2fa"],
+      "keywords": [
+        "password",
+        "vault",
+        "credentials",
+        "totp",
+        "2fa"
+      ],
       "category": "provider",
       "requires": [],
       "optional": [],
-      "provides": ["password-vault", "totp-generator"],
-      "environment": { "binary": "wallet" }
+      "provides": [
+        "password-vault",
+        "totp-generator"
+      ],
+      "environment": {
+        "binary": "wallet"
+      }
     },
     {
       "name": "alexa-mcp",
@@ -756,7 +772,7 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/alexa-mcp.git"
       },
-      "description": "Control Amazon Alexa from Claude Code — speak, control smart-home devices and groups, run routines.",
+      "description": "Control Amazon Alexa from Claude Code \u2014 speak, control smart-home devices and groups, run routines.",
       "version": "0.1.2",
       "author": {
         "name": "NOV LLC"
@@ -782,7 +798,10 @@
         "smart-home-control"
       ],
       "environment": {
-        "os": ["linux", "darwin"]
+        "os": [
+          "linux",
+          "darwin"
+        ]
       }
     },
     {
