@@ -170,7 +170,7 @@
         "url": "https://github.com/softwaresoftware-dev/mindframe.git"
       },
       "description": "AI agents that learn your org and act on it.",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "author": {
         "name": "NOV LLC"
       },
@@ -190,7 +190,8 @@
         "event-routing",
         "status-dashboard",
         "browser-automation",
-        "notification"
+        "notification",
+        "daemon"
       ],
       "provides": [],
       "environment": {}
