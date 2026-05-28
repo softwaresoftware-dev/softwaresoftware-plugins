@@ -515,7 +515,7 @@
           "linux",
           "darwin"
         ],
-        "binary": "tmux"
+        "binary": ["tmux", "uv"]
       }
     },
     {
@@ -1307,7 +1307,9 @@
       "requires": [],
       "optional": [],
       "provides": [],
-      "environment": {}
+      "environment": {
+        "binary": "uv"
+      }
     },
     {
       "name": "gmail-mcp",
