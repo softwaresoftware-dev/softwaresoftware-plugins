@@ -170,7 +170,7 @@
         "url": "https://github.com/softwaresoftware-dev/mindframe.git"
       },
       "description": "AI agents that learn your org and act on it. Ships vault-keeper for automated knowledge capture from Claude Code working sessions and vault-query for citation-grounded answers, both schema-driven per the deployment's vault. /mindframe:setup installs the capture loop end-to-end — no manual systemd or taskpilot wiring.",
-      "version": "0.6.1",
+      "version": "0.6.2",
       "author": {
         "name": "NOV LLC"
       },
@@ -619,8 +619,8 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/dispatcher.git"
       },
-      "description": "Event-routing provider. Installs dispatcher-ingress as a managed daemon that routes events from external systems (Sentry, GitHub, Slack, etc.) to long-running sessions or spawns ephemeral agents per event.",
-      "version": "0.1.0",
+      "description": "Event-routing provider. Installs dispatcher-ingress as a managed daemon that routes events from external systems (Sentry, GitHub, Slack, etc.) to long-running sessions or spawns ephemeral agents per event. v0.3+ reads bearer from DISPATCHER_INGEST_TOKEN_FILE for chmod-600 file-handoff workflows.",
+      "version": "0.3.0",
       "author": {
         "name": "NOV LLC"
       },
