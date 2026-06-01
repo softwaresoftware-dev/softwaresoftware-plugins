@@ -221,6 +221,7 @@
       "provides": [
         "status-dashboard"
       ],
+      "retain_on_orphan": true,
       "environment": {
         "binary": [
           "python3"
@@ -642,6 +643,7 @@
       "provides": [
         "event-routing"
       ],
+      "retain_on_orphan": true,
       "environment": {
         "binary": [
           "python3",
@@ -1366,6 +1368,7 @@
       "provides": [
         "knowledge-base"
       ],
+      "retain_on_orphan": true,
       "environment": {
         "binary": [
           "git"
