@@ -586,8 +586,8 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/daemon-manager.git"
       },
-      "description": "Generic daemon lifecycle manager. Start, stop, and monitor persistent background processes with cross-platform IPC. Includes daemon_install_autostart for one-call launchd / systemd / Task Scheduler registration. Managed daemons inherit a sane PATH and PYTHONUNBUFFERED by default so logs reach journald.",
-      "version": "1.3.0",
+      "description": "Generic daemon lifecycle manager. Start, stop, and monitor persistent background processes with cross-platform IPC. Includes daemon_install_autostart for one-call launchd / systemd / Task Scheduler registration. Restarts daemons automatically when their owning plugin is updated, via a session-start drift check. Managed daemons inherit a sane PATH and PYTHONUNBUFFERED by default so logs reach journald.",
+      "version": "1.4.0",
       "author": {
         "name": "NOV LLC"
       },
