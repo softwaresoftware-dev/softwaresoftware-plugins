@@ -170,7 +170,7 @@
         "url": "https://github.com/softwaresoftware-dev/mindframe.git"
       },
       "description": "AI agents that learn your org and act on it. /mindframe:setup is now UI-based: a terminal bootstrap births your first mindframe, which onboards you in a web surface — watch your knowledge base take shape as it interviews you and connects your tools. Ships vault-keeper for automated knowledge capture and vault-query for citation-grounded answers.",
-      "version": "0.9.0",
+      "version": "0.9.1",
       "author": {
         "name": "NOV LLC"
       },
