@@ -484,7 +484,7 @@
         "url": "https://github.com/softwaresoftware-dev/taskpilot.git"
       },
       "description": "Spawn and manage long-running autonomous Claude Code sessions. A long-lived supervisor daemon owns spawn, kill, and crash recovery; services auto-respawn through a reconciler tick. Agents are never killed for 'looking done' — completion is explicit, not inferred. Channel-based communication, operating briefs, built-in cron scheduling, persistent pane logs. Linux + macOS natively; Windows via WSL2 (Claude Code runs inside the WSL distro).",
-      "version": "0.11.0",
+      "version": "0.12.0",
       "author": {
         "name": "NOV LLC"
       },
