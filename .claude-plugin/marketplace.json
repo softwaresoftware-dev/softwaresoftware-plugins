@@ -526,7 +526,7 @@
         "url": "https://github.com/softwaresoftware-dev/session-bridge-plugin.git"
       },
       "description": "Channel MCP that lets Claude Code sessions message each other. Provides the session-mesh capability \u2014 bidirectional inbound/outbound communication between live sessions, used by taskpilot and dispatcher for agent-to-agent and external-event routing. Bundles the FastAPI bridge daemon and installs it via the daemon capability.",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "author": {
         "name": "NOV LLC"
       },
