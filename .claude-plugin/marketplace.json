@@ -483,8 +483,8 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/taskpilot.git"
       },
-      "description": "Spawn and manage long-running autonomous Claude Code sessions. A long-lived supervisor daemon owns spawn, kill, and crash recovery; services auto-respawn through a reconciler tick. Agents are never killed for 'looking done' — completion is explicit, not inferred. Channel-based communication, operating briefs, built-in cron scheduling, persistent pane logs. Linux + macOS natively; Windows via WSL2 (Claude Code runs inside the WSL distro).",
-      "version": "0.12.0",
+      "description": "A local service exposing an HTTP API to spawn and manage long-running autonomous Claude Code agents. A boot-persistent supervisor daemon owns the spawn/kill/message lifecycle; each agent runs in its own tmux session, addressable by task id over session-bridge. Channel-based communication, operating briefs, persistent pane logs. The MCP server is a thin client over the daemon. Linux + macOS natively; Windows via WSL2 (Claude Code runs inside the WSL distro).",
+      "version": "0.13.0",
       "author": {
         "name": "NOV LLC"
       },
@@ -496,8 +496,7 @@
         "task",
         "tmux",
         "channel",
-        "scheduling",
-        "cron"
+        "daemon"
       ],
       "category": "framework",
       "requires": [
@@ -507,9 +506,6 @@
       "optional": [],
       "provides": [
         "agent-spawning"
-      ],
-      "built_in_capabilities": [
-        "scheduling"
       ],
       "environment": {
         "os": [
@@ -526,7 +522,7 @@
         "url": "https://github.com/softwaresoftware-dev/session-bridge-plugin.git"
       },
       "description": "Channel MCP that lets Claude Code sessions message each other. Provides the session-mesh capability \u2014 bidirectional inbound/outbound communication between live sessions, used by taskpilot and dispatcher for agent-to-agent and external-event routing. Bundles the FastAPI bridge daemon and installs it via the daemon capability.",
-      "version": "0.2.1",
+      "version": "0.3.0",
       "author": {
         "name": "NOV LLC"
       },
