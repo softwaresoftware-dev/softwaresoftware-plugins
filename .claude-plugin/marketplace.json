@@ -483,7 +483,7 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/taskpilot.git"
       },
-      "description": "A local service exposing an HTTP API to spawn and manage long-running autonomous Claude Code agents. A boot-persistent supervisor daemon owns the spawn/kill/message lifecycle; each agent runs in its own tmux session, addressable by task id over session-bridge. Channel-based communication, operating briefs, persistent pane logs. The MCP server is a thin client over the daemon. Linux + macOS natively; Windows via WSL2 (Claude Code runs inside the WSL distro).",
+      "description": "A local service exposing an HTTP API to spawn and manage long-running autonomous Claude Code agents. A boot-persistent supervisor daemon owns the spawn/kill/message lifecycle; each agent runs in its own tmux session, addressable by task id over session-bridge. Channel-based communication and operating briefs. The MCP server is a thin client over the daemon. Linux + macOS natively; Windows via WSL2 (Claude Code runs inside the WSL distro).",
       "version": "0.13.0",
       "author": {
         "name": "NOV LLC"
