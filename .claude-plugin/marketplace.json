@@ -477,7 +477,7 @@
         "url": "https://github.com/softwaresoftware-dev/dispatcher.git"
       },
       "description": "Event-routing provider. Installs dispatcher-ingress as a managed daemon that routes events from external systems (Sentry, GitHub, Slack, etc.) to live sessions or spawns ephemeral agents per event. v0.4 spawns via taskpilot's daemon HTTP API; reads bearer from DISPATCHER_INGEST_TOKEN_FILE for chmod-600 file-handoff workflows.",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "author": {
         "name": "NOV LLC"
       },
