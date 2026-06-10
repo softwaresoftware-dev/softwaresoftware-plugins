@@ -169,7 +169,7 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/mindframe.git"
       },
-      "description": "AI agents that learn your org and act on it. /mindframe:setup is UI-based: a terminal bootstrap births your first mindframe, which onboards you in a web surface — watch your knowledge base take shape as it interviews you and connects your tools. A graph home hosts every mindframe; a dock switches between them.",
+      "description": "AI agents that learn your org and act on it. /mindframe:setup is UI-based: a terminal bootstrap births your first mindframe, which onboards you in a web surface \u2014 watch your knowledge base take shape as it interviews you and connects your tools. A graph home hosts every mindframe; a dock switches between them.",
       "version": "1.0.1",
       "author": {
         "name": "NOV LLC"
@@ -240,71 +240,12 @@
         "notifications"
       ],
       "category": "utilities",
-      "requires": [
-        "notification"
-      ],
+      "requires": [],
       "optional": [
         "scheduling"
       ],
       "provides": [],
       "environment": {}
-    },
-    {
-      "name": "notify-linux",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/notify-linux.git"
-      },
-      "description": "Linux desktop notifications via notify-send.",
-      "version": "2.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "notification",
-        "linux",
-        "desktop",
-        "notify-send"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "notification"
-      ],
-      "environment": {
-        "os": "linux",
-        "binary": "notify-send"
-      }
-    },
-    {
-      "name": "notify-windows",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/notify-windows.git"
-      },
-      "description": "Windows desktop notifications via toast API.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "notification",
-        "windows",
-        "desktop",
-        "toast"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "notification"
-      ],
-      "environment": {
-        "os": "windows"
-      }
     },
     {
       "name": "termux-remote",
@@ -330,63 +271,11 @@
       "requires": [],
       "optional": [],
       "provides": [
-        "notification",
         "send-sms"
       ],
       "environment": {
         "mcp": "desktop-channel"
       }
-    },
-    {
-      "name": "notify-slack",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/notify-slack.git"
-      },
-      "description": "Slack notifications via incoming webhooks.",
-      "version": "1.1.1",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "notification",
-        "slack",
-        "webhook"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "notification"
-      ],
-      "environment": {}
-    },
-    {
-      "name": "notify-email",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/notify-email.git"
-      },
-      "description": "Email notifications via Gmail SMTP. Implements the notification capability contract.",
-      "version": "1.1.1",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "notification",
-        "email",
-        "gmail",
-        "smtp"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "notification"
-      ],
-      "environment": {}
     },
     {
       "name": "approval-channel",
@@ -478,7 +367,10 @@
           "linux",
           "darwin"
         ],
-        "binary": ["tmux", "uv"]
+        "binary": [
+          "tmux",
+          "uv"
+        ]
       }
     },
     {
@@ -509,7 +401,9 @@
         "session-mesh"
       ],
       "environment": {
-        "binary": ["python3"]
+        "binary": [
+          "python3"
+        ]
       }
     },
     {
@@ -758,7 +652,6 @@
       "requires": [],
       "optional": [
         "browser-automation",
-        "notification",
         "scheduling",
         "human-approval"
       ],
@@ -879,8 +772,7 @@
       "category": "utilities",
       "requires": [],
       "optional": [
-        "security-logging",
-        "notification"
+        "security-logging"
       ],
       "provides": [],
       "environment": {}
