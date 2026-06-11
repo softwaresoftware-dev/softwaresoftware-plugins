@@ -170,7 +170,7 @@
         "url": "https://github.com/softwaresoftware-dev/mindframe.git"
       },
       "description": "AI agents that learn your org and act on it. /mindframe:setup is UI-based: a terminal bootstrap births your first mindframe, which onboards you in a web surface \u2014 watch your knowledge base take shape as it interviews you and connects your tools. A graph home hosts every mindframe; a dock switches between them.",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "author": {
         "name": "NOV LLC"
       },
@@ -338,7 +338,7 @@
         "url": "https://github.com/softwaresoftware-dev/taskpilot.git"
       },
       "description": "A local service exposing an HTTP API to spawn and manage long-running autonomous Claude Code agents. A boot-persistent supervisor daemon owns the spawn/kill/message lifecycle; each agent runs in its own tmux session, addressable by task id over session-bridge. Channel-based communication and operating briefs. The MCP server is a thin client over the daemon. The boot service is installed and version-drift-healed by the daemon capability. Linux + macOS natively; Windows via WSL2 (Claude Code runs inside the WSL distro).",
-      "version": "0.14.0",
+      "version": "0.15.0",
       "author": {
         "name": "NOV LLC"
       },
@@ -380,7 +380,7 @@
         "url": "https://github.com/softwaresoftware-dev/session-bridge-plugin.git"
       },
       "description": "Channel MCP that lets Claude Code sessions message each other. Provides the session-mesh capability \u2014 bidirectional inbound/outbound communication between live sessions, used by taskpilot and dispatcher for agent-to-agent and external-event routing. Bundles the FastAPI bridge daemon and installs it via the daemon capability.",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "author": {
         "name": "NOV LLC"
       },
