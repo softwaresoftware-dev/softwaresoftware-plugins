@@ -170,7 +170,7 @@
         "url": "https://github.com/softwaresoftware-dev/mindframe.git"
       },
       "description": "AI agents that learn your org and act on it. /mindframe:setup is UI-based: a terminal bootstrap births your first mindframe, which onboards you in a web surface \u2014 watch your knowledge base take shape as it interviews you and connects your tools. A graph home hosts every mindframe; a dock switches between them.",
-      "version": "1.3.1",
+      "version": "1.3.2",
       "author": {
         "name": "NOV LLC"
       },
