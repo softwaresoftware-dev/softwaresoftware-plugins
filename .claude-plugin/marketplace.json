@@ -1265,8 +1265,8 @@
     "source": "url",
     "url": "https://github.com/softwaresoftware-dev/meeting-transcribe.git"
    },
-   "description": "Record meeting audio output and transcribe it \u2014 live rolling transcript in the browser plus a high-quality final transcript. Captures what you hear (the meeting), not your microphone. Linux native (PipeWire); Windows via WASAPI loopback; macOS with a BlackHole loopback device.",
-   "version": "0.1.0",
+   "description": "Record meeting audio output and transcribe it \u2014 live rolling transcript, high-quality final transcript, and knowledge-base distillation (decisions, people, terms) into the mindframe vault when present. Linux native (PipeWire); Windows via WASAPI loopback; macOS with a BlackHole loopback device.",
+   "version": "0.2.0",
    "author": {
     "name": "NOV LLC"
    },
@@ -1276,7 +1276,8 @@
     "transcription",
     "recording",
     "whisper",
-    "audio"
+    "audio",
+    "knowledge-base"
    ],
    "category": "provider",
    "requires": [
