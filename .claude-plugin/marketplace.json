@@ -1,1260 +1,1292 @@
 {
-  "name": "softwaresoftware-plugins",
-  "owner": {
+ "name": "softwaresoftware-plugins",
+ "owner": {
+  "name": "NOV LLC"
+ },
+ "metadata": {
+  "description": "Claude Code plugins by softwaresoftware.dev"
+ },
+ "external_registries": {
+  "claude-plugins-official": {
+   "repo": "anthropics/claude-plugins-official",
+   "description": "Anthropic's official Claude Code plugin directory"
+  },
+  "arctype-plugins": {
+   "repo": "arctype-ventures/arctype-plugins",
+   "description": "Arctype Ventures' Claude Code plugin marketplace"
+  }
+ },
+ "plugins": [
+  {
+   "name": "softwaresoftware",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/softwaresoftware.git"
+   },
+   "description": "Plugin dependency resolver \u2014 detects environment, resolves capabilities, auto-selects providers, generates install plans.",
+   "version": "1.6.0",
+   "author": {
     "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "dependencies",
+    "resolver",
+    "capabilities",
+    "framework"
+   ],
+   "category": "framework",
+   "requires": [],
+   "optional": [],
+   "provides": [],
+   "environment": {
+    "binary": "uv"
+   }
   },
-  "metadata": {
-    "description": "Claude Code plugins by softwaresoftware.dev"
+  {
+   "name": "zapframe",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/zapframe.git"
+   },
+   "description": "SaaS project creation and feature development agent. Django + Next.js, auth, billing, email, monitoring. Create new apps or develop features on existing ones with regression playbooks.",
+   "version": "1.2.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "saas",
+    "scaffolding",
+    "django",
+    "nextjs",
+    "deployment"
+   ],
+   "category": "development",
+   "requires": [
+    "docker-dev-environment",
+    "deploy"
+   ],
+   "optional": [],
+   "provides": [],
+   "environment": {}
   },
-  "external_registries": {
-    "claude-plugins-official": {
-      "repo": "anthropics/claude-plugins-official",
-      "description": "Anthropic's official Claude Code plugin directory"
-    },
-    "arctype-plugins": {
-      "repo": "arctype-ventures/arctype-plugins",
-      "description": "Arctype Ventures' Claude Code plugin marketplace"
-    }
+  {
+   "name": "ironframe",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/ironframe.git"
+   },
+   "description": "Enterprise project creation agent. Django + Next.js with SSO, RBAC, audit logging, multi-tenancy, API key management, and GDPR compliance. Everything in zapframe plus enterprise-grade features.",
+   "version": "1.0.1",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://ironframe.softwaresoftware.dev",
+   "keywords": [
+    "enterprise",
+    "saas",
+    "scaffolding",
+    "django",
+    "nextjs",
+    "sso",
+    "rbac",
+    "audit",
+    "multi-tenant",
+    "compliance"
+   ],
+   "category": "development",
+   "requires": [
+    "docker-dev-environment",
+    "deploy"
+   ],
+   "optional": [],
+   "provides": [],
+   "environment": {}
   },
-  "plugins": [
-    {
-      "name": "softwaresoftware",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/softwaresoftware.git"
-      },
-      "description": "Plugin dependency resolver \u2014 detects environment, resolves capabilities, auto-selects providers, generates install plans.",
-      "version": "1.6.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "dependencies",
-        "resolver",
-        "capabilities",
-        "framework"
-      ],
-      "category": "framework",
-      "requires": [],
-      "optional": [],
-      "provides": [],
-      "environment": {
-        "binary": "uv"
-      }
-    },
-    {
-      "name": "zapframe",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/zapframe.git"
-      },
-      "description": "SaaS project creation and feature development agent. Django + Next.js, auth, billing, email, monitoring. Create new apps or develop features on existing ones with regression playbooks.",
-      "version": "1.2.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "saas",
-        "scaffolding",
-        "django",
-        "nextjs",
-        "deployment"
-      ],
-      "category": "development",
-      "requires": [
-        "docker-dev-environment",
-        "deploy"
-      ],
-      "optional": [],
-      "provides": [],
-      "environment": {}
-    },
-    {
-      "name": "ironframe",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/ironframe.git"
-      },
-      "description": "Enterprise project creation agent. Django + Next.js with SSO, RBAC, audit logging, multi-tenancy, API key management, and GDPR compliance. Everything in zapframe plus enterprise-grade features.",
-      "version": "1.0.1",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://ironframe.softwaresoftware.dev",
-      "keywords": [
-        "enterprise",
-        "saas",
-        "scaffolding",
-        "django",
-        "nextjs",
-        "sso",
-        "rbac",
-        "audit",
-        "multi-tenant",
-        "compliance"
-      ],
-      "category": "development",
-      "requires": [
-        "docker-dev-environment",
-        "deploy"
-      ],
-      "optional": [],
-      "provides": [],
-      "environment": {}
-    },
-    {
-      "name": "softwaresoftware-design-system",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/softwaresoftware-design-system.git"
-      },
-      "description": "Design system for softwaresoftware.dev \u2014 warm dark palette, three-font typography, component standards.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://softwaresoftware-design-system.softwaresoftware.dev",
-      "keywords": [
-        "design-system",
-        "css",
-        "typography",
-        "dark-theme",
-        "components"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "design-system"
-      ],
-      "environment": {}
-    },
-    {
-      "name": "liteframe",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/liteframe.git"
-      },
-      "description": "Static page publisher. HTML + CSS at any subdomain, deployed to Nginx via Cloudflare Tunnel.",
-      "version": "1.4.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "static",
-        "html",
-        "landing-page",
-        "deployment"
-      ],
-      "category": "development",
-      "requires": [
-        "deploy",
-        "design-system"
-      ],
-      "optional": [
-        "browser-automation"
-      ],
-      "provides": [],
-      "built_in_capabilities": [
-        "static-site-build"
-      ],
-      "environment": {}
-    },
-    {
-      "name": "mindframe",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/mindframe.git"
-      },
-      "description": "AI agents that learn your org and act on it. /mindframe:setup is UI-based: a terminal bootstrap births your first mindframe, which onboards you in a web surface \u2014 watch your knowledge base take shape as it interviews you and connects your tools. A graph home hosts every mindframe; a dock switches between them.",
-      "version": "1.2.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "knowledge-base",
-        "ai-agent",
-        "automation",
-        "reporting",
-        "claude"
-      ],
-      "category": "framework",
-      "requires": [
-        "agent-spawning",
-        "session-mesh",
-        "event-routing",
-        "browser-automation",
-        "daemon"
-      ],
-      "provides": [],
-      "environment": {}
-    },
-    {
-      "name": "gummymine",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/gummymine-plugin.git"
-      },
-      "description": "Reddit audience research \u2014 mine subreddits for demand signals via gummymine.softwaresoftware.dev",
-      "version": "3.0.1",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://gummymine.softwaresoftware.dev",
-      "keywords": [
-        "reddit",
-        "audience-research",
-        "demand-signals",
-        "market-research"
-      ],
-      "category": "research",
-      "requires": [
-        "browser-automation"
-      ],
-      "optional": [],
-      "provides": [],
-      "environment": {}
-    },
-    {
-      "name": "cardwatch",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/cardwatch.git"
-      },
-      "description": "Pokemon card stock monitor. Tracks inventory at 7 major retailers, auto-enters virtual queues, sends phone + desktop notifications.",
-      "version": "2.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://cardwatch.softwaresoftware.dev",
-      "keywords": [
-        "pokemon",
-        "tcg",
-        "stock-monitor",
-        "queue",
-        "retail",
-        "notifications"
-      ],
-      "category": "utilities",
-      "requires": [],
-      "optional": [
-        "scheduling"
-      ],
-      "provides": [],
-      "environment": {}
-    },
-    {
-      "name": "termux-remote",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/termux-remote.git"
-      },
-      "description": "Remote phone capabilities via Termux HTTP bridge. Notifications and SMS through a single connection.",
-      "version": "1.1.1",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "termux",
-        "android",
-        "phone",
-        "notification",
-        "sms",
-        "remote"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "send-sms"
-      ],
-      "environment": {
-        "mcp": "desktop-channel"
-      }
-    },
-    {
-      "name": "approval-channel",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/approval-channel.git"
-      },
-      "description": "Human approval state machine. Gates actions behind human confirmation, delivered over any two-way communication channel. MFA is an approval flowed through a channel provider.",
-      "version": "3.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "approval",
-        "human-in-the-loop",
-        "conversation",
-        "mfa"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [
-        "channel"
-      ],
-      "provides": [
-        "human-approval"
-      ],
-      "environment": {}
-    },
-    {
-      "name": "memory-file",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/memory-file.git"
-      },
-      "description": "File-based persistent memory for autonomous agents. Implements the memory capability contract.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "memory",
-        "persistence",
-        "agent",
-        "knowledge"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "memory"
-      ],
-      "environment": {}
-    },
-    {
-      "name": "taskpilot",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/taskpilot.git"
-      },
-      "description": "A local service exposing an HTTP API to spawn and manage long-running autonomous Claude Code agents. A boot-persistent supervisor daemon owns the spawn/kill/message lifecycle; each agent runs in its own tmux session, addressable by task id over session-bridge. Channel-based communication and operating briefs. The MCP server is a thin client over the daemon. The boot service is installed and version-drift-healed by the daemon capability. Linux + macOS natively; Windows via WSL2 (Claude Code runs inside the WSL distro).",
-      "version": "0.15.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "agent",
-        "autonomous",
-        "background",
-        "task",
-        "tmux",
-        "channel",
-        "daemon"
-      ],
-      "category": "framework",
-      "requires": [
-        "terminal-ops",
-        "session-mesh",
-        "daemon"
-      ],
-      "optional": [],
-      "provides": [
-        "agent-spawning"
-      ],
-      "environment": {
-        "os": [
-          "linux",
-          "darwin"
-        ],
-        "binary": [
-          "tmux",
-          "uv"
-        ]
-      }
-    },
-    {
-      "name": "session-bridge",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/session-bridge-plugin.git"
-      },
-      "description": "Channel MCP that lets Claude Code sessions message each other. Provides the session-mesh capability \u2014 bidirectional inbound/outbound communication between live sessions, used by taskpilot and dispatcher for agent-to-agent and external-event routing. Bundles the FastAPI bridge daemon and installs it via the daemon capability.",
-      "version": "0.4.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "session",
-        "channel",
-        "mesh",
-        "communication",
-        "provider"
-      ],
-      "category": "provider",
-      "requires": [
-        "daemon"
-      ],
-      "optional": [],
-      "provides": [
-        "session-mesh"
-      ],
-      "environment": {
-        "binary": [
-          "python3"
-        ]
-      }
-    },
-    {
-      "name": "termux-channel",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/termux-channel.git"
-      },
-      "description": "SMS channel provider via Termux. Delivers messages as phone notifications with correlation IDs for reply tracking.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "channel",
-        "termux",
-        "sms",
-        "notification",
-        "reply",
-        "phone"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "channel"
-      ],
-      "environment": {
-        "mcp": "desktop-channel"
-      }
-    },
-    {
-      "name": "daemon-manager",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/daemon-manager.git"
-      },
-      "description": "Generic daemon lifecycle manager. Start, stop, and monitor persistent background processes with cross-platform IPC. Includes daemon_install_autostart for one-call launchd / systemd / Task Scheduler registration. Restarts daemons automatically when their owning plugin is updated, via a session-start drift check. Managed daemons inherit a sane PATH and PYTHONUNBUFFERED by default so logs reach journald.",
-      "version": "1.4.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "daemon",
-        "background",
-        "ipc",
-        "lifecycle",
-        "process"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "daemon"
-      ],
-      "environment": {
-        "os": [
-          "linux",
-          "darwin",
-          "windows"
-        ],
-        "binary": "uv"
-      }
-    },
-    {
-      "name": "dispatcher",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/dispatcher.git"
-      },
-      "description": "Event-routing provider. Installs dispatcher-ingress as a managed daemon that routes events from external systems (Sentry, GitHub, Slack, etc.) to live sessions or spawns ephemeral agents per event. v0.4 spawns via taskpilot's daemon HTTP API; reads bearer from DISPATCHER_INGEST_TOKEN_FILE for chmod-600 file-handoff workflows.",
-      "version": "0.5.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "dispatcher",
-        "webhook",
-        "router",
-        "events",
-        "ingress"
-      ],
-      "category": "provider",
-      "requires": [
-        "daemon",
-        "agent-spawning",
-        "session-mesh"
-      ],
-      "optional": [],
-      "provides": [
-        "event-routing"
-      ],
-      "retain_on_orphan": true,
-      "environment": {
-        "binary": [
-          "python3",
-          "git"
-        ]
-      }
-    },
-    {
-      "name": "claude-browser-bridge",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/claude-browser-bridge.git"
-      },
-      "description": "MCP bridge between Claude Code and your browser via WebSocket extension.",
-      "version": "3.7.1",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "browser",
-        "websocket",
-        "extension",
-        "automation"
-      ],
-      "category": "provider",
-      "requires": [
-        "daemon"
-      ],
-      "optional": [],
-      "provides": [
-        "browser-automation"
-      ],
-      "environment": {
-        "binary": "node"
-      }
-    },
-    {
-      "name": "nginx-cloudflare-deploy",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/nginx-cloudflare-deploy.git"
-      },
-      "description": "Deploy local services and static sites to public HTTPS URLs via Nginx reverse proxy and Cloudflare Tunnel. Guided setup with persistent config.",
-      "version": "1.1.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "deploy",
-        "nginx",
-        "cloudflare",
-        "tunnel",
-        "reverse-proxy",
-        "self-hosted"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "deploy"
-      ],
-      "environment": {
-        "binary": [
-          "nginx",
-          "cloudflared"
-        ]
-      }
-    },
-    {
-      "name": "dockside",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/dockside.git"
-      },
-      "description": "Dynamic Docker dev environments with port allocation. Reads docker-compose.yml, runs containers with random host ports, manages lifecycle.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "docker",
-        "compose",
-        "dev-environment",
-        "port-allocation",
-        "containers"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "docker-dev-environment"
-      ],
-      "environment": {
-        "binary": "docker"
-      }
-    },
-    {
-      "name": "wallet",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/wallet-plugin.git"
-      },
-      "description": "Read-only MCP wrapper around the wallet CLI. Provides password-vault and totp-generator capabilities for plugins that need to authenticate to third-party services.",
-      "version": "0.1.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "password",
-        "vault",
-        "credentials",
-        "totp",
-        "2fa"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "password-vault",
-        "totp-generator"
-      ],
-      "environment": {
-        "binary": "wallet"
-      }
-    },
-    {
-      "name": "alexa-mcp",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/alexa-mcp.git"
-      },
-      "description": "Control Amazon Alexa from Claude Code \u2014 speak, control smart-home devices and groups, run routines.",
-      "version": "0.1.2",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "alexa",
-        "smart-home",
-        "iot",
-        "voice",
-        "tts"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [
-        "browser-automation",
-        "scheduling",
-        "human-approval"
-      ],
-      "provides": [
-        "voice-tts",
-        "smart-home-control"
-      ],
-      "environment": {
-        "os": [
-          "linux",
-          "darwin"
-        ]
-      }
-    },
-    {
-      "name": "reddit-poster",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/reddit-poster.git"
-      },
-      "description": "Reddit social-posting provider. Posts, replies, deletes, and tracks performance on Reddit via browser automation.",
-      "version": "1.1.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "reddit",
-        "social-posting",
-        "content",
-        "browser-bridge"
-      ],
-      "category": "provider",
-      "requires": [
-        "browser-automation"
-      ],
-      "optional": [
-        "human-approval"
-      ],
-      "provides": [
-        "social-posting"
-      ],
-      "environment": {}
-    },
-    {
-      "name": "tmux-session",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/tmux-session.git"
-      },
-      "description": "Terminal session management via tmux. Create, monitor, and control detached terminal sessions.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "tmux",
-        "terminal",
-        "session",
-        "provider"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "terminal-ops"
-      ],
-      "environment": {
-        "binary": "tmux"
-      }
-    },
-    {
-      "name": "plugin-tester",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/plugin-tester.git"
-      },
-      "description": "[DEPRECATED \u2014 use plugin-dev:test-live] Automated end-to-end testing of plugin install workflows.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "testing",
-        "e2e",
-        "plugins",
-        "install",
-        "automation"
-      ],
-      "category": "development",
-      "requires": [
-        "agent-spawning"
-      ],
-      "optional": [],
-      "provides": [],
-      "environment": {}
-    },
-    {
-      "name": "prompt-guard",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/prompt-guard.git"
-      },
-      "description": "Detects prompt injection attempts \u2014 privilege escalation, fake system prompts, instruction override, social engineering. Delegates logging to a compatible security-logging provider.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "security",
-        "prompt-injection",
-        "defense",
-        "guardrails"
-      ],
-      "category": "utilities",
-      "requires": [],
-      "optional": [
-        "security-logging"
-      ],
-      "provides": [],
-      "environment": {}
-    },
-    {
-      "name": "plugin-dev",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/plugin-dev.git"
-      },
-      "description": "Plugin development toolkit \u2014 local dev iteration loop and marketplace install smoke testing.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "development",
-        "testing",
-        "plugins",
-        "iteration",
-        "e2e"
-      ],
-      "category": "toolkit",
-      "requires": [
-        "agent-spawning"
-      ],
-      "optional": [],
-      "provides": [],
-      "environment": {}
-    },
-    {
-      "name": "payment-vault",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/payment-vault.git"
-      },
-      "description": "Secure payment data provider. Stores credit/debit card info and fills payment forms without exposing raw values to conversation context.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "data-provider",
-        "vault",
-        "payment",
-        "secure-fill"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "payment-information"
-      ],
-      "environment": {}
-    },
-    {
-      "name": "address-vault",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/address-vault.git"
-      },
-      "description": "Secure address data provider. Stores complete address info and fills forms without exposing raw values to conversation context.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "data-provider",
-        "vault",
-        "address",
-        "secure-fill"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "address"
-      ],
-      "environment": {}
-    },
-    {
-      "name": "contacts-vault",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/contacts-vault.git"
-      },
-      "description": "Secure contacts data provider. Stores contact info and fills forms without exposing raw values to conversation context.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "data-provider",
-        "vault",
-        "contacts",
-        "secure-fill"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "contacts"
-      ],
-      "environment": {}
-    },
-    {
-      "name": "vehicle-vault",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/vehicle-vault.git"
-      },
-      "description": "Secure vehicle data provider. Stores VIN, plate, insurance info and fills forms without exposing raw values to conversation context.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "data-provider",
-        "vault",
-        "vehicle",
-        "secure-fill"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "vehicle-info"
-      ],
-      "environment": {}
-    },
-    {
-      "name": "identity-vault",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/identity-vault.git"
-      },
-      "description": "Secure identity document provider. Stores SSN, driver's license, passport info and fills forms without exposing raw values to conversation context.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "data-provider",
-        "vault",
-        "identity",
-        "secure-fill"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "identity-documents"
-      ],
-      "environment": {}
-    },
-    {
-      "name": "banking-vault",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/banking-vault.git"
-      },
-      "description": "Secure banking data provider. Stores routing/account numbers and fills forms without exposing raw values to conversation context.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "data-provider",
-        "vault",
-        "banking",
-        "secure-fill"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "banking-info"
-      ],
-      "environment": {}
-    },
-    {
-      "name": "playwright",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/anthropics/claude-plugins-official.git"
-      },
-      "registry": "claude-plugins-official",
-      "description": "Browser automation and E2E testing via Microsoft Playwright MCP server.",
-      "version": "0.0.0",
-      "author": {
-        "name": "Microsoft"
-      },
-      "homepage": "https://github.com/anthropics/claude-plugins-official",
-      "keywords": [
-        "browser",
-        "automation",
-        "testing",
-        "playwright"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "browser-automation"
-      ],
-      "environment": {
-        "binary": "npx"
-      },
-      "external": true
-    },
-    {
-      "name": "stagehand",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/anthropics/claude-plugins-official.git"
-      },
-      "registry": "claude-plugins-official",
-      "description": "AI-native browser automation skill using Stagehand. Natural language web interaction.",
-      "version": "0.0.0",
-      "author": {
-        "name": "Browserbase"
-      },
-      "homepage": "https://github.com/anthropics/claude-plugins-official",
-      "keywords": [
-        "browser",
-        "automation",
-        "stagehand",
-        "ai-native"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "browser-automation"
-      ],
-      "environment": {
-        "binary": "npx"
-      },
-      "external": true
-    },
-    {
-      "name": "vercel",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/anthropics/claude-plugins-official.git"
-      },
-      "registry": "claude-plugins-official",
-      "description": "Deploy to Vercel \u2014 manage deployments, check build status, configure domains.",
-      "version": "0.0.0",
-      "author": {
-        "name": "Vercel"
-      },
-      "homepage": "https://github.com/anthropics/claude-plugins-official",
-      "keywords": [
-        "deploy",
-        "vercel",
-        "hosting",
-        "serverless"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "deploy"
-      ],
-      "environment": {
-        "env": "VERCEL_TOKEN"
-      },
-      "external": true
-    },
-    {
-      "name": "netlify-skills",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/anthropics/claude-plugins-official.git"
-      },
-      "registry": "claude-plugins-official",
-      "description": "Deploy to Netlify \u2014 functions, edge functions, blobs, and site management.",
-      "version": "0.0.0",
-      "author": {
-        "name": "Netlify"
-      },
-      "homepage": "https://github.com/anthropics/claude-plugins-official",
-      "keywords": [
-        "deploy",
-        "netlify",
-        "hosting",
-        "jamstack"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "deploy"
-      ],
-      "environment": {
-        "env": "NETLIFY_AUTH_TOKEN"
-      },
-      "external": true
-    },
-    {
-      "name": "deploy-on-aws",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/awslabs/agent-plugins.git"
-      },
-      "registry": "claude-plugins-official",
-      "description": "Deploy to AWS with architecture recommendations, cost estimates, and IaC.",
-      "version": "0.0.0",
-      "author": {
-        "name": "AWS"
-      },
-      "homepage": "https://github.com/awslabs/agent-plugins",
-      "keywords": [
-        "deploy",
-        "aws",
-        "cloud",
-        "infrastructure"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "deploy"
-      ],
-      "environment": {
-        "binary": "aws"
-      },
-      "external": true
-    },
-    {
-      "name": "railway",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/anthropics/claude-plugins-official.git"
-      },
-      "registry": "claude-plugins-official",
-      "description": "Deploy to Railway \u2014 manage apps, databases, and infrastructure.",
-      "version": "0.0.0",
-      "author": {
-        "name": "Railway"
-      },
-      "homepage": "https://github.com/anthropics/claude-plugins-official",
-      "keywords": [
-        "deploy",
-        "railway",
-        "hosting",
-        "paas"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "deploy"
-      ],
-      "environment": {
-        "env": "RAILWAY_TOKEN"
-      },
-      "external": true
-    },
-    {
-      "name": "tokenboard",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/tokenboard.git"
-      },
-      "description": "Token usage leaderboard \u2014 calculates Claude Code API cost equivalent and uploads to the public leaderboard at tokenboard.softwaresoftware.dev.",
-      "version": "1.0.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://tokenboard.softwaresoftware.dev",
-      "keywords": [
-        "tokens",
-        "usage",
-        "leaderboard",
-        "stats",
-        "cost"
-      ],
-      "category": "utilities",
-      "requires": [],
-      "optional": [],
-      "provides": [],
-      "environment": {
-        "binary": "uv"
-      }
-    },
-    {
-      "name": "gmail-mcp",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/gmail-mcp.git"
-      },
-      "description": "MCP server for Gmail \u2014 read, search, label, filter, send, and archive emails. Includes email manager mode with auto-triage and Slack approval. No delete capability by design.",
-      "version": "1.3.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://gmail-mcp.softwaresoftware.dev",
-      "keywords": [
-        "gmail",
-        "email",
-        "mcp",
-        "organize",
-        "labels",
-        "filters",
-        "send"
-      ],
-      "category": "utilities",
-      "requires": [],
-      "optional": [
-        "human-approval"
-      ],
-      "provides": [],
-      "environment": {}
-    },
-    {
-      "name": "browser-qa",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/browser-qa.git"
-      },
-      "description": "Visual QA for web apps \u2014 screenshot, verify consistency, test interactivity, catch regressions",
-      "version": "0.1.0",
-      "author": {
-        "name": "NOV LLC"
-      },
-      "homepage": "https://plugins.softwaresoftware.dev",
-      "keywords": [
-        "qa",
-        "testing",
-        "visual",
-        "browser",
-        "review",
-        "ui"
-      ],
-      "category": "toolkit",
-      "requires": [
-        "browser-automation"
-      ],
-      "optional": [],
-      "provides": [],
-      "environment": {}
-    },
-    {
-      "name": "hive-mind",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/arctype-ventures/arctype-plugins.git"
-      },
-      "registry": "arctype-plugins",
-      "description": "Obsidian-based shared knowledge vault for teams. qmd-powered BM25 + vector search over meetings, people, glossary, and per-repo notes. Satisfies the knowledge-base capability when explicitly installed.",
-      "version": "0.1.6",
-      "author": {
-        "name": "Arctype Ventures"
-      },
-      "homepage": "https://github.com/arctype-ventures/arctype-plugins/tree/main/plugins/hive-mind",
-      "keywords": [
-        "knowledge-base",
-        "obsidian",
-        "vault",
-        "qmd",
-        "wiki",
-        "team"
-      ],
-      "category": "provider",
-      "requires": [],
-      "optional": [],
-      "provides": [
-        "knowledge-base"
-      ],
-      "environment": {
-        "binary": "qmd"
-      },
-      "external": true
-    }
-  ]
+  {
+   "name": "softwaresoftware-design-system",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/softwaresoftware-design-system.git"
+   },
+   "description": "Design system for softwaresoftware.dev \u2014 warm dark palette, three-font typography, component standards.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://softwaresoftware-design-system.softwaresoftware.dev",
+   "keywords": [
+    "design-system",
+    "css",
+    "typography",
+    "dark-theme",
+    "components"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "design-system"
+   ],
+   "environment": {}
+  },
+  {
+   "name": "liteframe",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/liteframe.git"
+   },
+   "description": "Static page publisher. HTML + CSS at any subdomain, deployed to Nginx via Cloudflare Tunnel.",
+   "version": "1.4.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "static",
+    "html",
+    "landing-page",
+    "deployment"
+   ],
+   "category": "development",
+   "requires": [
+    "deploy",
+    "design-system"
+   ],
+   "optional": [
+    "browser-automation"
+   ],
+   "provides": [],
+   "built_in_capabilities": [
+    "static-site-build"
+   ],
+   "environment": {}
+  },
+  {
+   "name": "mindframe",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/mindframe.git"
+   },
+   "description": "AI agents that learn your org and act on it. /mindframe:setup is UI-based: a terminal bootstrap births your first mindframe, which onboards you in a web surface \u2014 watch your knowledge base take shape as it interviews you and connects your tools. A graph home hosts every mindframe; a dock switches between them.",
+   "version": "1.2.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "knowledge-base",
+    "ai-agent",
+    "automation",
+    "reporting",
+    "claude"
+   ],
+   "category": "framework",
+   "requires": [
+    "agent-spawning",
+    "session-mesh",
+    "event-routing",
+    "browser-automation",
+    "daemon"
+   ],
+   "provides": [],
+   "environment": {},
+   "optional": [
+    "meeting-capture"
+   ]
+  },
+  {
+   "name": "gummymine",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/gummymine-plugin.git"
+   },
+   "description": "Reddit audience research \u2014 mine subreddits for demand signals via gummymine.softwaresoftware.dev",
+   "version": "3.0.1",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://gummymine.softwaresoftware.dev",
+   "keywords": [
+    "reddit",
+    "audience-research",
+    "demand-signals",
+    "market-research"
+   ],
+   "category": "research",
+   "requires": [
+    "browser-automation"
+   ],
+   "optional": [],
+   "provides": [],
+   "environment": {}
+  },
+  {
+   "name": "cardwatch",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/cardwatch.git"
+   },
+   "description": "Pokemon card stock monitor. Tracks inventory at 7 major retailers, auto-enters virtual queues, sends phone + desktop notifications.",
+   "version": "2.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://cardwatch.softwaresoftware.dev",
+   "keywords": [
+    "pokemon",
+    "tcg",
+    "stock-monitor",
+    "queue",
+    "retail",
+    "notifications"
+   ],
+   "category": "utilities",
+   "requires": [],
+   "optional": [
+    "scheduling"
+   ],
+   "provides": [],
+   "environment": {}
+  },
+  {
+   "name": "termux-remote",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/termux-remote.git"
+   },
+   "description": "Remote phone capabilities via Termux HTTP bridge. Notifications and SMS through a single connection.",
+   "version": "1.1.1",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "termux",
+    "android",
+    "phone",
+    "notification",
+    "sms",
+    "remote"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "send-sms"
+   ],
+   "environment": {
+    "mcp": "desktop-channel"
+   }
+  },
+  {
+   "name": "approval-channel",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/approval-channel.git"
+   },
+   "description": "Human approval state machine. Gates actions behind human confirmation, delivered over any two-way communication channel. MFA is an approval flowed through a channel provider.",
+   "version": "3.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "approval",
+    "human-in-the-loop",
+    "conversation",
+    "mfa"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [
+    "channel"
+   ],
+   "provides": [
+    "human-approval"
+   ],
+   "environment": {}
+  },
+  {
+   "name": "memory-file",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/memory-file.git"
+   },
+   "description": "File-based persistent memory for autonomous agents. Implements the memory capability contract.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "memory",
+    "persistence",
+    "agent",
+    "knowledge"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "memory"
+   ],
+   "environment": {}
+  },
+  {
+   "name": "taskpilot",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/taskpilot.git"
+   },
+   "description": "A local service exposing an HTTP API to spawn and manage long-running autonomous Claude Code agents. A boot-persistent supervisor daemon owns the spawn/kill/message lifecycle; each agent runs in its own tmux session, addressable by task id over session-bridge. Channel-based communication and operating briefs. The MCP server is a thin client over the daemon. The boot service is installed and version-drift-healed by the daemon capability. Linux + macOS natively; Windows via WSL2 (Claude Code runs inside the WSL distro).",
+   "version": "0.15.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "agent",
+    "autonomous",
+    "background",
+    "task",
+    "tmux",
+    "channel",
+    "daemon"
+   ],
+   "category": "framework",
+   "requires": [
+    "terminal-ops",
+    "session-mesh",
+    "daemon"
+   ],
+   "optional": [],
+   "provides": [
+    "agent-spawning"
+   ],
+   "environment": {
+    "os": [
+     "linux",
+     "darwin"
+    ],
+    "binary": [
+     "tmux",
+     "uv"
+    ]
+   }
+  },
+  {
+   "name": "session-bridge",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/session-bridge-plugin.git"
+   },
+   "description": "Channel MCP that lets Claude Code sessions message each other. Provides the session-mesh capability \u2014 bidirectional inbound/outbound communication between live sessions, used by taskpilot and dispatcher for agent-to-agent and external-event routing. Bundles the FastAPI bridge daemon and installs it via the daemon capability.",
+   "version": "0.4.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "session",
+    "channel",
+    "mesh",
+    "communication",
+    "provider"
+   ],
+   "category": "provider",
+   "requires": [
+    "daemon"
+   ],
+   "optional": [],
+   "provides": [
+    "session-mesh"
+   ],
+   "environment": {
+    "binary": [
+     "python3"
+    ]
+   }
+  },
+  {
+   "name": "termux-channel",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/termux-channel.git"
+   },
+   "description": "SMS channel provider via Termux. Delivers messages as phone notifications with correlation IDs for reply tracking.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "channel",
+    "termux",
+    "sms",
+    "notification",
+    "reply",
+    "phone"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "channel"
+   ],
+   "environment": {
+    "mcp": "desktop-channel"
+   }
+  },
+  {
+   "name": "daemon-manager",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/daemon-manager.git"
+   },
+   "description": "Generic daemon lifecycle manager. Start, stop, and monitor persistent background processes with cross-platform IPC. Includes daemon_install_autostart for one-call launchd / systemd / Task Scheduler registration. Restarts daemons automatically when their owning plugin is updated, via a session-start drift check. Managed daemons inherit a sane PATH and PYTHONUNBUFFERED by default so logs reach journald.",
+   "version": "1.4.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "daemon",
+    "background",
+    "ipc",
+    "lifecycle",
+    "process"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "daemon"
+   ],
+   "environment": {
+    "os": [
+     "linux",
+     "darwin",
+     "windows"
+    ],
+    "binary": "uv"
+   }
+  },
+  {
+   "name": "dispatcher",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/dispatcher.git"
+   },
+   "description": "Event-routing provider. Installs dispatcher-ingress as a managed daemon that routes events from external systems (Sentry, GitHub, Slack, etc.) to live sessions or spawns ephemeral agents per event. v0.4 spawns via taskpilot's daemon HTTP API; reads bearer from DISPATCHER_INGEST_TOKEN_FILE for chmod-600 file-handoff workflows.",
+   "version": "0.5.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "dispatcher",
+    "webhook",
+    "router",
+    "events",
+    "ingress"
+   ],
+   "category": "provider",
+   "requires": [
+    "daemon",
+    "agent-spawning",
+    "session-mesh"
+   ],
+   "optional": [],
+   "provides": [
+    "event-routing"
+   ],
+   "retain_on_orphan": true,
+   "environment": {
+    "binary": [
+     "python3",
+     "git"
+    ]
+   }
+  },
+  {
+   "name": "claude-browser-bridge",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/claude-browser-bridge.git"
+   },
+   "description": "MCP bridge between Claude Code and your browser via WebSocket extension.",
+   "version": "3.7.1",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "browser",
+    "websocket",
+    "extension",
+    "automation"
+   ],
+   "category": "provider",
+   "requires": [
+    "daemon"
+   ],
+   "optional": [],
+   "provides": [
+    "browser-automation"
+   ],
+   "environment": {
+    "binary": "node"
+   }
+  },
+  {
+   "name": "nginx-cloudflare-deploy",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/nginx-cloudflare-deploy.git"
+   },
+   "description": "Deploy local services and static sites to public HTTPS URLs via Nginx reverse proxy and Cloudflare Tunnel. Guided setup with persistent config.",
+   "version": "1.1.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "deploy",
+    "nginx",
+    "cloudflare",
+    "tunnel",
+    "reverse-proxy",
+    "self-hosted"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "deploy"
+   ],
+   "environment": {
+    "binary": [
+     "nginx",
+     "cloudflared"
+    ]
+   }
+  },
+  {
+   "name": "dockside",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/dockside.git"
+   },
+   "description": "Dynamic Docker dev environments with port allocation. Reads docker-compose.yml, runs containers with random host ports, manages lifecycle.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "docker",
+    "compose",
+    "dev-environment",
+    "port-allocation",
+    "containers"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "docker-dev-environment"
+   ],
+   "environment": {
+    "binary": "docker"
+   }
+  },
+  {
+   "name": "wallet",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/wallet-plugin.git"
+   },
+   "description": "Read-only MCP wrapper around the wallet CLI. Provides password-vault and totp-generator capabilities for plugins that need to authenticate to third-party services.",
+   "version": "0.1.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "password",
+    "vault",
+    "credentials",
+    "totp",
+    "2fa"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "password-vault",
+    "totp-generator"
+   ],
+   "environment": {
+    "binary": "wallet"
+   }
+  },
+  {
+   "name": "alexa-mcp",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/alexa-mcp.git"
+   },
+   "description": "Control Amazon Alexa from Claude Code \u2014 speak, control smart-home devices and groups, run routines.",
+   "version": "0.1.2",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "alexa",
+    "smart-home",
+    "iot",
+    "voice",
+    "tts"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [
+    "browser-automation",
+    "scheduling",
+    "human-approval"
+   ],
+   "provides": [
+    "voice-tts",
+    "smart-home-control"
+   ],
+   "environment": {
+    "os": [
+     "linux",
+     "darwin"
+    ]
+   }
+  },
+  {
+   "name": "reddit-poster",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/reddit-poster.git"
+   },
+   "description": "Reddit social-posting provider. Posts, replies, deletes, and tracks performance on Reddit via browser automation.",
+   "version": "1.1.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "reddit",
+    "social-posting",
+    "content",
+    "browser-bridge"
+   ],
+   "category": "provider",
+   "requires": [
+    "browser-automation"
+   ],
+   "optional": [
+    "human-approval"
+   ],
+   "provides": [
+    "social-posting"
+   ],
+   "environment": {}
+  },
+  {
+   "name": "tmux-session",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/tmux-session.git"
+   },
+   "description": "Terminal session management via tmux. Create, monitor, and control detached terminal sessions.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "tmux",
+    "terminal",
+    "session",
+    "provider"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "terminal-ops"
+   ],
+   "environment": {
+    "binary": "tmux"
+   }
+  },
+  {
+   "name": "plugin-tester",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/plugin-tester.git"
+   },
+   "description": "[DEPRECATED \u2014 use plugin-dev:test-live] Automated end-to-end testing of plugin install workflows.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "testing",
+    "e2e",
+    "plugins",
+    "install",
+    "automation"
+   ],
+   "category": "development",
+   "requires": [
+    "agent-spawning"
+   ],
+   "optional": [],
+   "provides": [],
+   "environment": {}
+  },
+  {
+   "name": "prompt-guard",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/prompt-guard.git"
+   },
+   "description": "Detects prompt injection attempts \u2014 privilege escalation, fake system prompts, instruction override, social engineering. Delegates logging to a compatible security-logging provider.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "security",
+    "prompt-injection",
+    "defense",
+    "guardrails"
+   ],
+   "category": "utilities",
+   "requires": [],
+   "optional": [
+    "security-logging"
+   ],
+   "provides": [],
+   "environment": {}
+  },
+  {
+   "name": "plugin-dev",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/plugin-dev.git"
+   },
+   "description": "Plugin development toolkit \u2014 local dev iteration loop and marketplace install smoke testing.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "development",
+    "testing",
+    "plugins",
+    "iteration",
+    "e2e"
+   ],
+   "category": "toolkit",
+   "requires": [
+    "agent-spawning"
+   ],
+   "optional": [],
+   "provides": [],
+   "environment": {}
+  },
+  {
+   "name": "payment-vault",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/payment-vault.git"
+   },
+   "description": "Secure payment data provider. Stores credit/debit card info and fills payment forms without exposing raw values to conversation context.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "data-provider",
+    "vault",
+    "payment",
+    "secure-fill"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "payment-information"
+   ],
+   "environment": {}
+  },
+  {
+   "name": "address-vault",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/address-vault.git"
+   },
+   "description": "Secure address data provider. Stores complete address info and fills forms without exposing raw values to conversation context.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "data-provider",
+    "vault",
+    "address",
+    "secure-fill"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "address"
+   ],
+   "environment": {}
+  },
+  {
+   "name": "contacts-vault",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/contacts-vault.git"
+   },
+   "description": "Secure contacts data provider. Stores contact info and fills forms without exposing raw values to conversation context.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "data-provider",
+    "vault",
+    "contacts",
+    "secure-fill"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "contacts"
+   ],
+   "environment": {}
+  },
+  {
+   "name": "vehicle-vault",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/vehicle-vault.git"
+   },
+   "description": "Secure vehicle data provider. Stores VIN, plate, insurance info and fills forms without exposing raw values to conversation context.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "data-provider",
+    "vault",
+    "vehicle",
+    "secure-fill"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "vehicle-info"
+   ],
+   "environment": {}
+  },
+  {
+   "name": "identity-vault",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/identity-vault.git"
+   },
+   "description": "Secure identity document provider. Stores SSN, driver's license, passport info and fills forms without exposing raw values to conversation context.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "data-provider",
+    "vault",
+    "identity",
+    "secure-fill"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "identity-documents"
+   ],
+   "environment": {}
+  },
+  {
+   "name": "banking-vault",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/banking-vault.git"
+   },
+   "description": "Secure banking data provider. Stores routing/account numbers and fills forms without exposing raw values to conversation context.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "data-provider",
+    "vault",
+    "banking",
+    "secure-fill"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "banking-info"
+   ],
+   "environment": {}
+  },
+  {
+   "name": "playwright",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/anthropics/claude-plugins-official.git"
+   },
+   "registry": "claude-plugins-official",
+   "description": "Browser automation and E2E testing via Microsoft Playwright MCP server.",
+   "version": "0.0.0",
+   "author": {
+    "name": "Microsoft"
+   },
+   "homepage": "https://github.com/anthropics/claude-plugins-official",
+   "keywords": [
+    "browser",
+    "automation",
+    "testing",
+    "playwright"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "browser-automation"
+   ],
+   "environment": {
+    "binary": "npx"
+   },
+   "external": true
+  },
+  {
+   "name": "stagehand",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/anthropics/claude-plugins-official.git"
+   },
+   "registry": "claude-plugins-official",
+   "description": "AI-native browser automation skill using Stagehand. Natural language web interaction.",
+   "version": "0.0.0",
+   "author": {
+    "name": "Browserbase"
+   },
+   "homepage": "https://github.com/anthropics/claude-plugins-official",
+   "keywords": [
+    "browser",
+    "automation",
+    "stagehand",
+    "ai-native"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "browser-automation"
+   ],
+   "environment": {
+    "binary": "npx"
+   },
+   "external": true
+  },
+  {
+   "name": "vercel",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/anthropics/claude-plugins-official.git"
+   },
+   "registry": "claude-plugins-official",
+   "description": "Deploy to Vercel \u2014 manage deployments, check build status, configure domains.",
+   "version": "0.0.0",
+   "author": {
+    "name": "Vercel"
+   },
+   "homepage": "https://github.com/anthropics/claude-plugins-official",
+   "keywords": [
+    "deploy",
+    "vercel",
+    "hosting",
+    "serverless"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "deploy"
+   ],
+   "environment": {
+    "env": "VERCEL_TOKEN"
+   },
+   "external": true
+  },
+  {
+   "name": "netlify-skills",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/anthropics/claude-plugins-official.git"
+   },
+   "registry": "claude-plugins-official",
+   "description": "Deploy to Netlify \u2014 functions, edge functions, blobs, and site management.",
+   "version": "0.0.0",
+   "author": {
+    "name": "Netlify"
+   },
+   "homepage": "https://github.com/anthropics/claude-plugins-official",
+   "keywords": [
+    "deploy",
+    "netlify",
+    "hosting",
+    "jamstack"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "deploy"
+   ],
+   "environment": {
+    "env": "NETLIFY_AUTH_TOKEN"
+   },
+   "external": true
+  },
+  {
+   "name": "deploy-on-aws",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/awslabs/agent-plugins.git"
+   },
+   "registry": "claude-plugins-official",
+   "description": "Deploy to AWS with architecture recommendations, cost estimates, and IaC.",
+   "version": "0.0.0",
+   "author": {
+    "name": "AWS"
+   },
+   "homepage": "https://github.com/awslabs/agent-plugins",
+   "keywords": [
+    "deploy",
+    "aws",
+    "cloud",
+    "infrastructure"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "deploy"
+   ],
+   "environment": {
+    "binary": "aws"
+   },
+   "external": true
+  },
+  {
+   "name": "railway",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/anthropics/claude-plugins-official.git"
+   },
+   "registry": "claude-plugins-official",
+   "description": "Deploy to Railway \u2014 manage apps, databases, and infrastructure.",
+   "version": "0.0.0",
+   "author": {
+    "name": "Railway"
+   },
+   "homepage": "https://github.com/anthropics/claude-plugins-official",
+   "keywords": [
+    "deploy",
+    "railway",
+    "hosting",
+    "paas"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "deploy"
+   ],
+   "environment": {
+    "env": "RAILWAY_TOKEN"
+   },
+   "external": true
+  },
+  {
+   "name": "tokenboard",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/tokenboard.git"
+   },
+   "description": "Token usage leaderboard \u2014 calculates Claude Code API cost equivalent and uploads to the public leaderboard at tokenboard.softwaresoftware.dev.",
+   "version": "1.0.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://tokenboard.softwaresoftware.dev",
+   "keywords": [
+    "tokens",
+    "usage",
+    "leaderboard",
+    "stats",
+    "cost"
+   ],
+   "category": "utilities",
+   "requires": [],
+   "optional": [],
+   "provides": [],
+   "environment": {
+    "binary": "uv"
+   }
+  },
+  {
+   "name": "gmail-mcp",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/gmail-mcp.git"
+   },
+   "description": "MCP server for Gmail \u2014 read, search, label, filter, send, and archive emails. Includes email manager mode with auto-triage and Slack approval. No delete capability by design.",
+   "version": "1.3.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://gmail-mcp.softwaresoftware.dev",
+   "keywords": [
+    "gmail",
+    "email",
+    "mcp",
+    "organize",
+    "labels",
+    "filters",
+    "send"
+   ],
+   "category": "utilities",
+   "requires": [],
+   "optional": [
+    "human-approval"
+   ],
+   "provides": [],
+   "environment": {}
+  },
+  {
+   "name": "browser-qa",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/browser-qa.git"
+   },
+   "description": "Visual QA for web apps \u2014 screenshot, verify consistency, test interactivity, catch regressions",
+   "version": "0.1.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "qa",
+    "testing",
+    "visual",
+    "browser",
+    "review",
+    "ui"
+   ],
+   "category": "toolkit",
+   "requires": [
+    "browser-automation"
+   ],
+   "optional": [],
+   "provides": [],
+   "environment": {}
+  },
+  {
+   "name": "hive-mind",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/arctype-ventures/arctype-plugins.git"
+   },
+   "registry": "arctype-plugins",
+   "description": "Obsidian-based shared knowledge vault for teams. qmd-powered BM25 + vector search over meetings, people, glossary, and per-repo notes. Satisfies the knowledge-base capability when explicitly installed.",
+   "version": "0.1.6",
+   "author": {
+    "name": "Arctype Ventures"
+   },
+   "homepage": "https://github.com/arctype-ventures/arctype-plugins/tree/main/plugins/hive-mind",
+   "keywords": [
+    "knowledge-base",
+    "obsidian",
+    "vault",
+    "qmd",
+    "wiki",
+    "team"
+   ],
+   "category": "provider",
+   "requires": [],
+   "optional": [],
+   "provides": [
+    "knowledge-base"
+   ],
+   "environment": {
+    "binary": "qmd"
+   },
+   "external": true
+  },
+  {
+   "name": "meeting-transcribe",
+   "source": {
+    "source": "url",
+    "url": "https://github.com/softwaresoftware-dev/meeting-transcribe.git"
+   },
+   "description": "Record meeting audio output and transcribe it \u2014 live rolling transcript in the browser plus a high-quality final transcript. Captures what you hear (the meeting), not your microphone. Linux native (PipeWire); Windows via WASAPI loopback; macOS with a BlackHole loopback device.",
+   "version": "0.1.0",
+   "author": {
+    "name": "NOV LLC"
+   },
+   "homepage": "https://plugins.softwaresoftware.dev",
+   "keywords": [
+    "meeting",
+    "transcription",
+    "recording",
+    "whisper",
+    "audio"
+   ],
+   "category": "provider",
+   "requires": [
+    "daemon"
+   ],
+   "optional": [],
+   "provides": [
+    "meeting-capture"
+   ],
+   "environment": {}
+  }
+ ]
 }
