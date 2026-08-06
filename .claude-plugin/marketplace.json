@@ -110,8 +110,8 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/softwaresoftware-design-system.git"
       },
-      "description": "Design system for softwaresoftware.dev \u2014 warm dark palette, three-font typography, component standards.",
-      "version": "1.0.0",
+      "description": "Design system for softwaresoftware.dev \u2014 v2 light monochrome: Archivo, sharp corners, green status accent.",
+      "version": "2.0.0",
       "author": {
         "name": "NOV LLC"
       },
@@ -120,7 +120,8 @@
         "design-system",
         "css",
         "typography",
-        "dark-theme",
+        "monochrome",
+        "light-theme",
         "components"
       ],
       "category": "provider",
@@ -803,6 +804,32 @@
       "requires": [
         "agent-spawning"
       ],
+      "optional": [],
+      "provides": [],
+      "environment": {}
+    },
+    {
+      "name": "harness-audit",
+      "source": {
+        "source": "github",
+        "repo": "softwaresoftware-dev/harness-audit"
+      },
+      "description": "Audit your Claude Code deployment for context clutter \u2014 enumerate MCP servers, plugins, skills, and exposed tools; detect overlap, dead servers, and vague triggers; produce a scored report with trim recommendations. Read-only.",
+      "version": "0.1.0",
+      "author": {
+        "name": "NOV LLC"
+      },
+      "homepage": "https://plugins.softwaresoftware.dev",
+      "keywords": [
+        "audit",
+        "mcp",
+        "plugins",
+        "context",
+        "tools",
+        "deployment-hygiene"
+      ],
+      "category": "toolkit",
+      "requires": [],
       "optional": [],
       "provides": [],
       "environment": {}
