@@ -1315,6 +1315,33 @@
         "meeting-capture"
       ],
       "environment": {}
+    },
+    {
+      "name": "reboot",
+      "source": {
+        "source": "github",
+        "repo": "softwaresoftware-dev/reboot"
+      },
+      "description": "/reboot \u2014 restart the current Claude Code session in place (kill + relaunch --resume in the same terminal), so new plugins, skills, MCP servers, and settings load without manually starting a new session",
+      "version": "0.1.0",
+      "author": {
+        "name": "NOV LLC"
+      },
+      "homepage": "https://plugins.softwaresoftware.dev",
+      "keywords": [
+        "session",
+        "restart",
+        "reload",
+        "plugins",
+        "terminal"
+      ],
+      "category": "utilities",
+      "requires": [],
+      "optional": [],
+      "provides": [],
+      "environment": {
+        "os": "linux"
+      }
     }
   ]
 }
