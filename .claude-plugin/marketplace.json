@@ -518,7 +518,7 @@
         "url": "https://github.com/softwaresoftware-dev/claude-browser-bridge.git"
       },
       "description": "MCP bridge between Claude Code and your browser via WebSocket extension.",
-      "version": "3.10.0",
+      "version": "3.11.0",
       "author": {
         "name": "NOV LLC"
       },
