@@ -1342,6 +1342,49 @@
       "environment": {
         "os": "linux"
       }
+    },
+    {
+      "name": "sentinel",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/softwaresoftware-dev/sentinel.git"
+      },
+      "description": "Background watchers that page you when something needs you (calendar conflicts across accounts, Claude-triaged urgent mail, GitHub mentions, Slack DMs, or any source you scaffold), one combined morning brief, and a reply-to-act agent: message it back and Claude does the work with your tools.",
+      "version": "1.0.0",
+      "author": {
+        "name": "NOV LLC"
+      },
+      "homepage": "https://sentinel.softwaresoftware.dev",
+      "keywords": [
+        "alerts",
+        "monitoring",
+        "morning-brief",
+        "sms",
+        "ntfy",
+        "calendar",
+        "email",
+        "github",
+        "slack",
+        "agent",
+        "daemon",
+        "watcher"
+      ],
+      "category": "utilities",
+      "requires": [
+        "daemon"
+      ],
+      "optional": [
+        "send-sms",
+        "session-mesh",
+        "browser-automation"
+      ],
+      "provides": [],
+      "environment": {
+        "binary": [
+          "uv",
+          "claude"
+        ]
+      }
     }
   ]
 }
