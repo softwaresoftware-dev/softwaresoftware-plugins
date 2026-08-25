@@ -1387,16 +1387,16 @@
       }
     },
     {
-      "name": "dropin",
+      "name": "claude-inbox",
       "source": {
         "source": "url",
-        "url": "https://github.com/softwaresoftware-dev/dropin.git"
+        "url": "https://github.com/softwaresoftware-dev/claude-inbox.git"
       },
       "description": "An inbox for Claude Code and Claude Desktop: drop named, ready-to-resume conversations into the local session list \u2014 briefs, reports, handoffs \u2014 for near-zero tokens.",
       "author": {
         "name": "NOV LLC"
       },
-      "homepage": "https://github.com/softwaresoftware-dev/dropin",
+      "homepage": "https://github.com/softwaresoftware-dev/claude-inbox",
       "license": "MIT",
       "keywords": [
         "inbox",
