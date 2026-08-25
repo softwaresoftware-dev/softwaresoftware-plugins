@@ -1405,7 +1405,17 @@
         "briefs",
         "claude-desktop",
         "agent"
-      ]
+      ],
+      "version": "0.1.0",
+      "category": "utilities",
+      "requires": [],
+      "provides": [],
+      "environment": {
+        "binary": [
+          "uv",
+          "claude"
+        ]
+      }
     }
   ]
 }
