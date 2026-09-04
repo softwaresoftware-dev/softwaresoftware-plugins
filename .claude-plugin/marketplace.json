@@ -1423,7 +1423,7 @@
         "source": "github",
         "repo": "softwaresoftware-dev/idle-compact"
       },
-      "description": "Compacts Claude Code sessions that have sat idle too long. The built-in auto-compact fires on how full the context is; this fires on how long a session has been untouched \u2014 past a threshold (45m by default) it types a real /compact into the session, so you come back to one that has already tidied itself instead of one that stalls the moment you type. Drives background sessions via `claude attach` and terminal sessions via tmux, yakuake, or Konsole, reading each session's screen first and refusing on an unsent draft, an open dialog, or work in flight.",
+      "description": "Compacts Claude Code sessions that have sat idle too long. The built-in auto-compact fires on how full the context is; this fires on how long a session has been untouched \u2014 past a threshold (45m by default) it types a real /compact into the session, so you come back to one that has already tidied itself instead of one that stalls the moment you type. Drives background sessions via `claude attach` and terminal sessions via tmux, yakuake, or Konsole, reading each session's screen first and refusing on an unsent draft, an open dialog, or work in flight. Runs as a managed daemon via the daemon capability, with a standalone systemd timer as a fallback.",
       "version": "0.1.0",
       "author": {
         "name": "NOV LLC"
@@ -1441,7 +1441,9 @@
         "systemd"
       ],
       "category": "utilities",
-      "requires": [],
+      "requires": [
+        "daemon"
+      ],
       "optional": [
         "terminal-ops"
       ],
