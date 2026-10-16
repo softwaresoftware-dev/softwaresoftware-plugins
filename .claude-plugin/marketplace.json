@@ -110,8 +110,8 @@
         "source": "url",
         "url": "https://github.com/softwaresoftware-dev/softwaresoftware-design-system.git"
       },
-      "description": "Design system for softwaresoftware.dev \u2014 v2 light monochrome: Archivo, sharp corners, green status accent.",
-      "version": "2.0.0",
+      "description": "Design system for softwaresoftware.dev \u2014 v3 Instrument: Basecoat Lyra components with one theme (Archivo, monochrome, sharp corners, green status accent).",
+      "version": "3.0.0",
       "author": {
         "name": "NOV LLC"
       },
