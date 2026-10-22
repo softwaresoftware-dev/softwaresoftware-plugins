@@ -1,7 +1,7 @@
 {
   "name": "softwaresoftware-plugins",
   "owner": {
-    "name": "NOV LLC"
+    "name": "GRAV LLC"
   },
   "metadata": {
     "description": "Claude Code plugins by softwaresoftware.dev"
@@ -26,7 +26,7 @@
       "description": "Plugin dependency resolver \u2014 detects environment, resolves capabilities, auto-selects providers, generates install plans.",
       "version": "1.6.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -52,7 +52,7 @@
       "description": "SaaS project creation and feature development agent. Django + Next.js, auth, billing, email, monitoring. Create new apps or develop features on existing ones with regression playbooks.",
       "version": "1.2.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -80,7 +80,7 @@
       "description": "Enterprise project creation agent. Django + Next.js with SSO, RBAC, audit logging, multi-tenancy, API key management, and GDPR compliance. Everything in zapframe plus enterprise-grade features.",
       "version": "1.0.1",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://ironframe.softwaresoftware.dev",
       "keywords": [
@@ -113,7 +113,7 @@
       "description": "Design system for softwaresoftware.dev \u2014 v3 Instrument: Basecoat Lyra components with one theme (Archivo, monochrome, sharp corners, green status accent).",
       "version": "3.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://softwaresoftware-design-system.softwaresoftware.dev",
       "keywords": [
@@ -141,7 +141,7 @@
       "description": "Static page publisher. HTML + CSS at any subdomain, deployed to Nginx via Cloudflare Tunnel.",
       "version": "1.4.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -173,7 +173,7 @@
       "description": "AI agents that learn your org and act on it. /mindframe:setup is UI-based: a terminal bootstrap births your first mindframe, which onboards you in a web surface \u2014 watch your knowledge base take shape as it interviews you and connects your tools. A graph home hosts every mindframe; a dock switches between them.",
       "version": "1.4.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -206,7 +206,7 @@
       "description": "Reddit audience research \u2014 mine subreddits for demand signals via gummymine.softwaresoftware.dev",
       "version": "3.0.1",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://gummymine.softwaresoftware.dev",
       "keywords": [
@@ -232,7 +232,7 @@
       "description": "Pokemon card stock monitor. Tracks inventory at 7 major retailers, auto-enters virtual queues, sends phone + desktop notifications.",
       "version": "2.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://cardwatch.softwaresoftware.dev",
       "keywords": [
@@ -260,7 +260,7 @@
       "description": "Remote phone capabilities via Termux HTTP bridge. Notifications and SMS through a single connection.",
       "version": "1.1.1",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -290,7 +290,7 @@
       "description": "Human approval state machine. Gates actions behind human confirmation, delivered over any two-way communication channel. MFA is an approval flowed through a channel provider.",
       "version": "3.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -318,7 +318,7 @@
       "description": "File-based persistent memory for autonomous agents. Implements the memory capability contract.",
       "version": "1.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -344,7 +344,7 @@
       "description": "A local service exposing an HTTP API to spawn and manage long-running autonomous Claude Code agents. A boot-persistent supervisor daemon owns the spawn/kill/message lifecycle; each agent runs in its own tmux session, addressable by task id over session-bridge. Channel-based communication and operating briefs. The MCP server is a thin client over the daemon. The boot service is installed and version-drift-healed by the daemon capability. Linux + macOS natively; Windows via WSL2 (Claude Code runs inside the WSL distro).",
       "version": "0.15.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -386,7 +386,7 @@
       "description": "Channel MCP that lets Claude Code sessions message each other. Provides the session-mesh capability \u2014 bidirectional inbound/outbound communication between live sessions, used by taskpilot and dispatcher for agent-to-agent and external-event routing. Bundles the FastAPI bridge daemon and installs it via the daemon capability.",
       "version": "0.4.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -419,7 +419,7 @@
       "description": "SMS channel provider via Termux. Delivers messages as phone notifications with correlation IDs for reply tracking.",
       "version": "1.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -449,7 +449,7 @@
       "description": "Generic daemon lifecycle manager. Start, stop, and monitor persistent background processes with cross-platform IPC. Includes daemon_install_autostart for one-call launchd / systemd / Task Scheduler registration. Restarts daemons automatically when their owning plugin is updated, via a session-start drift check. Managed daemons inherit a sane PATH and PYTHONUNBUFFERED by default so logs reach journald.",
       "version": "1.5.1",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -483,7 +483,7 @@
       "description": "Event-routing provider. Installs dispatcher-ingress as a managed daemon that routes events from external systems (Sentry, GitHub, Slack, etc.) to live sessions or spawns ephemeral agents per event. v0.4 spawns via taskpilot's daemon HTTP API; reads bearer from DISPATCHER_INGEST_TOKEN_FILE for chmod-600 file-handoff workflows.",
       "version": "0.5.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -520,7 +520,7 @@
       "description": "MCP bridge between Claude Code and your browser via WebSocket extension.",
       "version": "3.13.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -550,7 +550,7 @@
       "description": "Deploy local services and static sites to public HTTPS URLs via Nginx reverse proxy and Cloudflare Tunnel. Guided setup with persistent config.",
       "version": "1.1.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -583,7 +583,7 @@
       "description": "Dynamic Docker dev environments with port allocation. Reads docker-compose.yml, runs containers with random host ports, manages lifecycle.",
       "version": "1.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -612,7 +612,7 @@
       "description": "Read-only MCP wrapper around the wallet CLI. Provides password-vault and totp-generator capabilities for plugins that need to authenticate to third-party services.",
       "version": "0.1.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -642,7 +642,7 @@
       "description": "Control Amazon Alexa from Claude Code \u2014 speak, control smart-home devices and groups, run routines.",
       "version": "0.1.2",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -679,7 +679,7 @@
       "description": "Reddit social-posting provider. Posts, replies, deletes, and tracks performance on Reddit via browser automation.",
       "version": "1.1.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -709,7 +709,7 @@
       "description": "Terminal session management via tmux. Create, monitor, and control detached terminal sessions.",
       "version": "1.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -737,7 +737,7 @@
       "description": "[DEPRECATED \u2014 use plugin-dev:test-live] Automated end-to-end testing of plugin install workflows.",
       "version": "1.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -764,7 +764,7 @@
       "description": "Detects prompt injection attempts \u2014 privilege escalation, fake system prompts, instruction override, social engineering. Delegates logging to a compatible security-logging provider.",
       "version": "1.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -790,7 +790,7 @@
       "description": "Plugin development toolkit \u2014 local dev iteration loop and marketplace install smoke testing.",
       "version": "1.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -817,7 +817,7 @@
       "description": "Audit your Claude Code deployment for context clutter \u2014 enumerate MCP servers, plugins, skills, and exposed tools; detect overlap, dead servers, and vague triggers; produce a scored report with trim recommendations. Read-only.",
       "version": "0.1.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -843,7 +843,7 @@
       "description": "Secure payment data provider. Stores credit/debit card info and fills payment forms without exposing raw values to conversation context.",
       "version": "1.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -869,7 +869,7 @@
       "description": "Secure address data provider. Stores complete address info and fills forms without exposing raw values to conversation context.",
       "version": "1.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -895,7 +895,7 @@
       "description": "Secure contacts data provider. Stores contact info and fills forms without exposing raw values to conversation context.",
       "version": "1.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -921,7 +921,7 @@
       "description": "Secure vehicle data provider. Stores VIN, plate, insurance info and fills forms without exposing raw values to conversation context.",
       "version": "1.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -947,7 +947,7 @@
       "description": "Secure identity document provider. Stores SSN, driver's license, passport info and fills forms without exposing raw values to conversation context.",
       "version": "1.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -973,7 +973,7 @@
       "description": "Secure banking data provider. Stores routing/account numbers and fills forms without exposing raw values to conversation context.",
       "version": "1.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -1179,7 +1179,7 @@
       "description": "Token usage leaderboard \u2014 calculates Claude Code API cost equivalent and uploads to the public leaderboard at tokenboard.softwaresoftware.dev.",
       "version": "1.0.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://tokenboard.softwaresoftware.dev",
       "keywords": [
@@ -1206,7 +1206,7 @@
       "description": "MCP server for Gmail \u2014 read, search, label, filter, send, and archive emails. Includes email manager mode with auto-triage and Slack approval. No delete capability by design.",
       "version": "1.3.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://gmail-mcp.softwaresoftware.dev",
       "keywords": [
@@ -1235,7 +1235,7 @@
       "description": "Visual QA for web apps \u2014 screenshot, verify consistency, test interactivity, catch regressions",
       "version": "0.1.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -1295,7 +1295,7 @@
       "description": "Record meeting audio output and transcribe it \u2014 live rolling transcript, high-quality final transcript, and knowledge-base distillation (decisions, people, terms) into the mindframe vault when present. Linux native (PipeWire); Windows via WASAPI loopback; macOS with a BlackHole loopback device.",
       "version": "0.2.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -1325,7 +1325,7 @@
       "description": "/reboot \u2014 restart the current Claude Code session in place (kill + relaunch --resume in the same terminal), so new plugins, skills, MCP servers, and settings load without manually starting a new session",
       "version": "0.1.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "keywords": [
@@ -1352,7 +1352,7 @@
       "description": "Background watchers that page you when something needs you (calendar conflicts across accounts, Claude-triaged urgent mail, GitHub mentions, Slack DMs, or any source you scaffold), one combined morning brief, and a reply-to-act agent: message it back and Claude does the work with your tools.",
       "version": "1.1.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://sentinel.softwaresoftware.dev",
       "keywords": [
@@ -1394,7 +1394,7 @@
       },
       "description": "An inbox for Claude Code and Claude Desktop: drop named, ready-to-resume conversations into the local session list \u2014 briefs, reports, handoffs \u2014 for near-zero tokens.",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://github.com/softwaresoftware-dev/claude-inbox",
       "license": "MIT",
@@ -1426,7 +1426,7 @@
       "description": "Compacts Claude Code sessions that have sat idle too long. The built-in auto-compact fires on how full the context is; this fires on how long a session has been untouched \u2014 past a threshold (45m by default) it types a real /compact into the session, so you come back to one that has already tidied itself instead of one that stalls the moment you type. Drives background sessions via `claude attach` and terminal sessions via tmux, yakuake, or Konsole, reading each session's screen first and refusing on an unsent draft, an open dialog, or work in flight. Runs as a managed daemon via the daemon capability, with a standalone systemd timer as a fallback.",
       "version": "0.1.0",
       "author": {
-        "name": "NOV LLC"
+        "name": "GRAV LLC"
       },
       "homepage": "https://plugins.softwaresoftware.dev",
       "license": "LicenseRef-SOFTWARESOFTWARE",
